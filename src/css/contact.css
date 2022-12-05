@@ -1,0 +1,40 @@
+.bigContactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contactTextContainer h2 {
+    font-size: 2.4rem;
+}
+
+.contactContainer {
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .bigContactContainer {
+        align-items: flex-start;
+        padding-left: 6vh;
+    }
+    .contactContainer {
+        margin-top: 2vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2vh;
+    }
+    .contactTextContainer h2 {
+        font-size: 4.3rem;
+    }
+    .contactTextContainer {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+.bigPortfolioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolioTextContainer h2 {
+    font-size: 2.4rem;
+}
+
+.portfolioContainer {
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .bigPortfolioContainer {
+        align-items: flex-start;
+        padding-left: 6vh;
+    }
+    .portfolioContainer {
+        margin-top: 2vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2vh;
+    }
+    .portfolioTextContainer h2 {
+        font-size: 4.3rem;
+    }
+    .portfolioTextContainer {
+        margin-top: 20px;
+    }
+}

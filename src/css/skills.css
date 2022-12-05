@@ -1,0 +1,96 @@
+.bigSkillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.skillsTextContainer h2 {
+    font-size: 2.4rem;
+}
+
+.skillsContainer {
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+
+.skillsIcons {
+    width: auto;
+    height: 71px;
+    margin-bottom: 0.5vh;
+}
+
+.skillsIconsContainer {
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-right: 1.4vh;
+    margin-left: 1.4vh;
+    border-radius: 10px;
+    padding: 6px;
+    transition: all 0.5s;
+}
+
+.skillsContainer p {
+    color: aliceblue;
+    font-size: 0.96rem;
+}
+
+.skillsIconsContainer:hover {
+    transform: scale(1.2);
+    background-color: #303339;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 1024px) {
+    .skillsIcons {
+        height: 121px;
+        margin-bottom: 1.2vh;
+        margin-top: 1.2vh;
+    }
+    .bigSkillsContainer {
+        align-items: flex-start;
+        padding-left: 6vh;
+    }
+    .skillsContainer {
+        margin-top: 2vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2vh;
+    }
+    .skillsContainer p {
+        font-size: 1.4rem;
+    }
+    .skillsIconsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        margin-bottom: 6vh;
+        margin-right: 3vh;
+        margin-left: 3vh;
+        border-radius: 10px;
+        padding: 8px;
+    }
+    .skillsIconsContainer:hover {
+        transform: scale(1.1);
+    }
+    .skillsTextContainer h2 {
+        font-size: 4.3rem;
+    }
+    .skillsTextContainer {
+        margin-top: 20px;
+    }
+}

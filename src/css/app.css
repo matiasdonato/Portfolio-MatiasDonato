@@ -1,0 +1,89 @@
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .appContainer {
+        flex-direction: row;
+    }
+}
+
+#dark .homeContainer {
+    background-color: #1C1C1C;
+    border: 1px solid aliceblue;
+}
+
+#dark .yellow {
+    color: #FEE402;
+}
+
+#dark .homeContainer hr {
+    background-color: aliceblue;
+}
+
+#dark .profileIcons {
+    fill: aliceblue;
+}
+
+#dark .bigNavContainer {
+    background-color: #1C1C1C;
+    border-bottom: aliceblue solid 1px;
+}
+
+#dark .navIcons {
+    fill: aliceblue;
+}
+
+#dark .navLink {
+    background-color: #303339;
+}
+
+#dark .navLink::before {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-color: #FEE402;
+    position: absolute;
+    animation: spinBorder 6s linear infinite;
+}
+
+#dark .navLink::after {
+    background: #26282c;
+}
+
+#dark .sideNavLink {
+    background-color: #303339;
+}
+
+#dark .sideNavLink p {
+    color: aliceblue;
+}
+
+#dark .sideNavLink::before {
+    background-color: #FEE402;
+}
+
+#dark .sideNavLink::after {
+    background: #303339;
+}
+
+#dark .navMenu {
+    fill: aliceblue;
+}
+
+#dark .navClose {
+    fill: aliceblue;
+}
+
+#dark .sideNavContainer {
+    background-color: #1C1C1C;
+}
+
+@media screen and (min-width: 1024px) {
+    #dark .bigNavContainer {
+        border-right: aliceblue solid 1px;
+    }
+}

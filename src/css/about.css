@@ -1,0 +1,40 @@
+.bigAboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutTextContainer h2 {
+    font-size: 2.4rem;
+}
+
+.aboutContainer {
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .bigAboutContainer {
+        align-items: flex-start;
+        padding-left: 6vh;
+    }
+    .aboutContainer {
+        margin-top: 2vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2vh;
+    }
+    .aboutTextContainer h2 {
+        font-size: 4.3rem;
+    }
+    .aboutTextContainer {
+        margin-top: 20px;
+    }
+}
