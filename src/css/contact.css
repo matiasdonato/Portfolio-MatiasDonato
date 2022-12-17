@@ -17,6 +17,160 @@
     align-items: center;
     justify-content: center;
     padding: 2vh;
+    width: 80%;
+}
+
+.contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 36px;
+}
+
+.errorText {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: rgb(156, 0, 0);
+}
+
+.contactInput {
+    position: relative;
+    width: 96.1%;
+    padding: 20px 8px 10px 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    z-index: 1;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #FEE402;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.borderInput {
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 100%;
+    height: 80%;
+    border-radius: 4px;
+    border: #23242a solid 1px;
+}
+
+.borderTextarea {
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 100%;
+    height: 96%;
+    border-radius: 4px;
+    border: #23242a solid 1px;
+}
+
+.inputBox textarea {
+    width: 98.1%;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #FEE402;
+    transform: translateY(-64px);
+    font-size: 0.75rem;
+}
+
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span {
+    color: #FEE402;
+    transform: translateY(-256px);
+    font-size: 0.75rem;
+}
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    height: 80%;
+}
+
+.inputBox textarea:valid~i,
+.inputBox textarea:focus~i {
+    height: 96%;
+}
+
+.submitButton {
+    background-color: #8f8f8f;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    background-color: #dbc713;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 21px -8px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 21px -8px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 21px -8px rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+}
+
+.loadingContainer {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingSubmit {
+    width: 40%;
+}
+
+.submitButton:hover {
+    transform: scale(1.1);
+}
+
+.submitButton:disabled {
+    background-color: #292929;
+    box-shadow: none;
+    cursor: not-allowed;
+    color: #cfcfcf;
+}
+
+.submitButton:disabled:hover {
+    transform: scale(1);
+}
+
+.submitContactContainer {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -36,5 +190,28 @@
     }
     .contactTextContainer {
         margin-top: 20px;
+    }
+    .inputBox textarea {
+        width: 99%;
+    }
+    .submitContactContainer {
+        justify-content: flex-start;
+    }
+    .submitButton {
+        width: 150px;
+        height: 60px;
+    }
+    .loadingContainer {
+        width: 150px;
+        height: 60px;
+    }
+    .loadingSubmit {
+        width: 34%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .contactInput {
+        width: 100%;
     }
 }

@@ -6,8 +6,19 @@
     height: 100%;
 }
 
+.portfolioTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .portfolioTextContainer h2 {
     font-size: 2.4rem;
+}
+
+.portfolioTextContainer p {
+    font-size: 1.2rem;
+    margin-top: 6px;
 }
 
 .portfolioContainer {
@@ -15,26 +26,131 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding: 2vh;
+    width: 98%;
+}
+
+.projectContainer {
+    width: 330px;
+    height: 260px;
+    margin: 2vh;
+    position: relative;
+    border-radius: 22px;
+    border: aliceblue 2px solid;
+    -webkit-box-shadow: 0px 0px 12px -3px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 12px -3px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 12px -3px rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.projectImage {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    transition: all 1s;
+}
+
+.projectContainer:hover .projectImage {
+    transform: scale(1.05);
+}
+
+.projectTitleContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.projectInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #303339;
+    width: 100%;
+    height: 116px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.mainProjectInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 84%;
+    padding: 0 15px 0 15px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.projectContainer:hover .projectInfo {
+    height: 126px;
+}
+
+.mainProjectInfo h3 {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: aliceblue;
+}
+
+.projectInfoIcon {
+    width: 35px;
+    height: 35px;
+    fill: aliceblue;
+    margin-right: 14px;
+    transition: all 0.5s;
+}
+
+.projectInfoIcon:hover {
+    transform: scale(1.15);
+}
+
+.projectLinkIcon {
+    width: 30px;
+    height: 30px;
+    fill: aliceblue;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.projectLinkIcon:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 1024px) {
     .bigPortfolioContainer {
         align-items: flex-start;
-        padding-left: 6vh;
+        padding: 0 4vh 0 4vh;
     }
     .portfolioContainer {
-        margin-top: 2vh;
+        margin-top: 0vh;
         flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
         padding: 2vh;
+        width: 96%;
     }
     .portfolioTextContainer h2 {
         font-size: 4.3rem;
     }
+    .portfolioTextContainer p {
+        font-size: 2rem;
+        margin-top: 12px;
+    }
     .portfolioTextContainer {
         margin-top: 20px;
+        align-items: flex-start;
+    }
+    .projectContainer {
+        background-color: aqua;
+        width: 550px;
+        height: 390px;
+        margin: 2vh;
+    }
+    .mainProjectInfo {
+        padding: 0 18px 0 18px;
+    }
+    .mainProjectInfo h3 {
+        font-size: 2rem;
+        margin-right: 15px;
+        color: aliceblue;
     }
 }

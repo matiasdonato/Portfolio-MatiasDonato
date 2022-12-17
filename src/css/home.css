@@ -6,6 +6,9 @@
     width: 80%;
     margin-bottom: 5vh;
     padding-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 
 .homeContainer {

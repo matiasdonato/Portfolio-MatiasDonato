@@ -1,5 +1,6 @@
 import "../css/contact.css"
 import emailjs from "emailjs-com"
+import loadingGif from "../assets/images/loading2.gif"
 
 import {ChangeEvent, FormEvent, useState} from "react"
 
@@ -103,26 +104,53 @@ export default function Contact(){
       subject: "",
       body: ""
     })
+    setError({
+      name: "",
+      email: "",
+      subject: "",
+      body: ""
+    })
     setEmailLoading(false)
   }
 
   return (
     <div className="bigContactContainer" >
       <div className="contactTextContainer" >
-        <h2>Contact</h2>
+        <h2>Contact me!</h2>
       </div>
-      <h3>Contact me!</h3>
       <div className="contactContainer">
-        <form onSubmit={(e) => formSubmit(e)}>
-          <input maxLength={24} type="text" name="name" value={contactForm.name} onChange={(e) => handleInput(e) } />
-          {error.name && <p>{error.name}</p> }
-          <input maxLength={38} type="text" name="email" value={contactForm.email} onChange={(e) => handleInput(e) } />
-          {error.email && <p>{error.email}</p> }
-          <input maxLength={34} type="text" name="subject" value={contactForm.subject} onChange={(e) => handleInput(e) } />
-          {error.subject && <p>{error.subject}</p> }
-          <textarea name="body" value={contactForm.body} cols={30} rows={10} onChange={(e) => handleInput(e) } maxLength={600} ></textarea>
-          {error.body && <p>{error.body}</p> }
-          {emailLoading === false ? <input type="submit" value={"Submit"} disabled={ error.name !== null || error.email !== null || error.subject !== null || error.body !== null} /> : <p>Loading...</p>}
+        <form className="contactForm" onSubmit={(e) => formSubmit(e)}>
+          <div className="inputBox">
+            <input className="contactInput" autoComplete="off" maxLength={24} type="text" required={true} name="name" value={contactForm.name} onChange={(e) => handleInput(e) } />
+            <span>Name</span>
+            <i></i>
+            <div className="borderInput"></div>
+          </div>
+          {error.name && <p className="errorText">*{error.name}</p> }
+          <div className="inputBox"> 
+            <input className="contactInput" autoComplete="off" maxLength={38} type="text" required={true} name="email" value={contactForm.email} onChange={(e) => handleInput(e) } />
+            <span>Mail</span>
+            <i></i> 
+            <div className="borderInput"></div>
+          </div>
+          {error.email && <p className="errorText" >*{error.email}</p>}
+          <div className="inputBox"> 
+            <input className="contactInput" autoComplete="off" maxLength={34} type="text" required={true} name="subject" value={contactForm.subject} onChange={(e) => handleInput(e) } />
+            <span>Subject</span>
+            <i></i>
+            <div className="borderInput"></div>
+          </div>
+          {error.subject && <p className="errorText" >*{error.subject}</p>}
+          <div className="inputBox"> 
+            <textarea className="contactInput" name="body" required={true} value={contactForm.body} cols={30} rows={10} onChange={(e) => handleInput(e) } maxLength={600} ></textarea>
+            <span>Message</span> 
+            <i></i>
+            <div className="borderTextarea"></div>
+          </div>
+          {error.body && <p className="errorText" >*{error.body}</p>}
+          <div className="submitContactContainer">
+            {emailLoading === false ? <input type="submit" className="submitButton" value={"Submit"} disabled={ error.name !== null || error.email !== null || error.subject !== null || error.body !== null} /> : <div className="loadingContainer" > <img className="loadingSubmit" src={loadingGif} alt="loading" /> </div> }        
+          </div>
         </form>
       </div>
     </div>

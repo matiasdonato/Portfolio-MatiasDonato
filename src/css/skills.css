@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .skillsTextContainer h2 {
@@ -11,7 +11,7 @@
 }
 
 .skillsContainer {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -61,6 +61,7 @@
     .bigSkillsContainer {
         align-items: flex-start;
         padding-left: 6vh;
+        height: 100%;
     }
     .skillsContainer {
         margin-top: 2vh;
