@@ -93,16 +93,38 @@
     color: aliceblue;
 }
 
-.projectInfoIcon {
-    width: 35px;
-    height: 35px;
-    fill: aliceblue;
-    margin-right: 14px;
-    transition: all 0.5s;
+.projectInfoContainer {
+    display: flex;
+    height: 50px;
+    align-items: center;
 }
 
-.projectInfoIcon:hover {
+.projectInfoIcon {
+    width: 24px;
+    height: 24px;
+    fill: aliceblue;
+}
+
+.projectLinkContainer:hover {
     transform: scale(1.15);
+}
+
+.projectLinkContainer {
+    width: 33%;
+    padding: 3px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    border: solid 2px #1C1C1C;
+}
+
+.projectLinkContainer p {
+    margin-right: 5px;
+    color: aliceblue;
 }
 
 .projectLinkIcon {

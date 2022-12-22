@@ -19,17 +19,26 @@ export default function Projects(){
                   <div className="mainProjectInfo">
                     <div className="projectTitleContainer">
                       <h3>Dogs App</h3>
-                      <a href="https://dogs-app-matiasdonato.vercel.app" target={"_blank"} rel="noreferrer">
-                        <SvgOpenWindow className="projectLinkIcon" />
-                      </a>
                     </div>
-                    <div>
-                      <a href="https://www.linkedin.com/in/matías-donato-227488224/details/projects/" target={"_blank"} rel="noreferrer">
-                        <SvgInfo className="projectInfoIcon" />
-                      </a>
-                      <a href="https://github.com/matiasdonato/Dogs-App--PI-Henry" target={"_blank"} rel="noreferrer">
-                        <SvgGitHub className="projectInfoIcon" />
-                      </a>
+                    <div className="projectInfoContainer">
+                      <div className="projectLinkContainer">
+                        <p>Deploy</p>
+                        <a href="https://dogs-app-matiasdonato.vercel.app" target={"_blank"} rel="noreferrer">
+                          <SvgOpenWindow className="projectInfoIcon" />
+                        </a>
+                      </div>
+                      <div className="projectLinkContainer">
+                        <p>Info</p>
+                        <a href="https://www.linkedin.com/in/matías-donato-227488224/details/projects/" target={"_blank"} rel="noreferrer">
+                          <SvgInfo className="projectInfoIcon" />
+                        </a>
+                      </div>
+                      <div className="projectLinkContainer">
+                        <p>Github</p>
+                        <a href="https://github.com/matiasdonato/Dogs-App--PI-Henry" target={"_blank"} rel="noreferrer">
+                          <SvgGitHub className="projectInfoIcon" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
