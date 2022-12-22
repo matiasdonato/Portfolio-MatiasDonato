@@ -22,7 +22,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 6px;
+    position: absolute;
+    top: 0;
+    left: 5px;
 }
 
 .logo img {
@@ -249,6 +251,7 @@
         height: 30%;
         width: 100%;
         margin-left: 0;
+        position: relative;
     }
     .logo img {
         height: auto;

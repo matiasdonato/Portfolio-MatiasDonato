@@ -59,7 +59,7 @@ export default function Nav(){
                     </Link>
                 </div>
                 <div className="logo">
-                    <img src={profilePhoto} alt="Matias Donato Logo" className="logo"  />
+                    <img src={profilePhoto} alt="Matias Donato Logo"/>
                 </div>
                 <div className={`bigSideNavContainer ${sideNavHeight}`}>
                     <SvgMenu className="navMenu" onClick={() => toggleSideNav()} />
