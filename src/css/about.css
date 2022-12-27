@@ -13,28 +13,265 @@
 .aboutContainer {
     margin-top: 2vh;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2vh;
+    width: 90%;
+}
+
+.descriptionContainer {
+    padding: 3vh;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #1C1C1C;
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+}
+
+.descriptionContainer h5 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.descriptionContainer p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.aboutLinksContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3vh;
+    border-radius: 15px;
+    background-color: #1C1C1C;
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+}
+
+.aboutLinks {
+    width: 95%;
+    max-width: 282px;
+    margin: 8px 7.5px 8px 7.5px;
+    display: flex;
+    align-items: flex-end;
+    color: aliceblue;
+}
+
+.aboutLinkInfo {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.aboutLinkInfo h3 {
+    font-size: 1.24rem;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.aboutLinkInfo p {
+    font-size: 1rem;
+    height: 23px;
+}
+
+.aboutLinkInfo a {
+    font-size: 1.1rem;
+    color: #FEE402;
+    transition: all 0.22s;
+}
+
+.aboutLinkIcon {
+    width: 25px;
+    height: 25px;
+    fill: aliceblue;
+    margin-right: 6px;
+}
+
+.educationAndExperienceContainer {
+    width: 100%;
+}
+
+.bigAboutInfoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutInfoContainer {
+    background-color: #1C1C1C;
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 3vh;
+    width: 90%;
+}
+
+.aboutInfoContainer h5 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.aboutLenguageContainer {
+    background-color: #1C1C1C;
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 3vh;
+    width: 90%;
+}
+
+.aboutLenguageContainer h5 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.aboutLineAndInfo {
+    display: flex;
+}
+
+.aboutInfoLine {
+    margin: 15px 16px 24px 5px;
+}
+
+.aboutPoint {
+    background-color: aliceblue;
+    border-radius: 100px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -24px;
+    top: 10px;
+}
+
+.aboutInfo {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.infoTitle {
+    margin-bottom: 10px;
+}
+
+.infoTitleName {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.infoTitleDate {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.aboutInfo p {
+    font-size: 1.03rem;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 @media screen and (min-width: 1024px) {
     .bigAboutContainer {
         align-items: flex-start;
-        padding-left: 6vh;
     }
-    .aboutContainer {
-        margin-top: 2vh;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 2vh;
+    .aboutTextContainer {
+        margin-left: 4vh;
     }
     .aboutTextContainer h2 {
         font-size: 4.3rem;
     }
-    .aboutTextContainer {
-        margin-top: 20px;
+    .aboutContainer {
+        width: 100%;
+    }
+    .descriptionContainer {
+        width: 86%;
+    }
+    .aboutLinksContainer {
+        width: 86%;
+    }
+    .aboutLinks {
+        margin-right: 30px;
+        max-width: 300px;
+    }
+    .aboutLinkIcon {
+        width: 35px;
+        height: 35px;
+    }
+    .aboutLinks a:hover {
+        color: #b8a800;
+    }
+    .educationAndExperienceContainer {
+        width: 100%;
+    }
+    .bigAboutInfoContainer {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .aboutInfoContainer {
+        width: 86%;
+        padding: 3vh;
+    }
+    .aboutLenguageContainer {
+        width: 86%;
+        padding: 3vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .aboutInfoContainer {
+        width: 41%;
+        height: 86%;
+    }
+    .aboutLenguageContainer {
+        width: 82.8%;
+        margin-top: 0vh;
+    }
+    .bigAboutInfoContainer {
+        justify-content: space-around;
+    }
+    .educationAndExperienceContainer {
+        width: 91%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .aboutInfoContainer {
+        width: 42.7%;
+    }
+    .bigAboutInfoContainer {
+        justify-content: space-evenly;
+    }
+    .aboutLinksContainer {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .aboutInfoContainer {
+        width: 44%;
+        height: 84%;
+    }
+    .aboutLinks {
+        margin-right: 100px;
+    }
+    .aboutLenguageContainer {
+        width: 84.7%;
     }
 }
