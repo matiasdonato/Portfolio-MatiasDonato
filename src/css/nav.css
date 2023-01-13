@@ -73,13 +73,13 @@
 
 .buttonLink:hover {
     transform: scale(1.1);
-    -webkit-box-shadow: 0px 0px 34px -16px rgba(255, 250, 251, 1);
-    -moz-box-shadow: 0px 0px 34px -16px rgba(255, 250, 251, 1);
-    box-shadow: 0px 0px 34px -16px rgba(255, 250, 251, 1);
+    -webkit-box-shadow: 0px 0px 34px -16px rgb(2, 2, 2);
+    -moz-box-shadow: 0px 0px 34px 6px rgb(27, 27, 27);
+    box-shadow: 0px 0px 8px 2px rgb(0, 0, 0);
+    border-radius: 10px;
 }
 
 .navLink p {
-    color: aliceblue;
     font-size: 1rem;
     font-weight: 500;
     z-index: 1;
@@ -215,12 +215,73 @@
     margin-top: 20px;
 }
 
+.switchersBox {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    height: 120px;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.switcherContainer {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.switcherText {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 0px;
+    bottom: -4px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.english .slider::before {
+    transform: translateX(22px);
+}
+
+.light .slider::before {
+    transform: translateX(22px);
+}
+
 @media screen and (min-width: 1024px) {
     .navContainer {
         width: 100%;
-        height: 46%;
+        height: 56%;
         min-height: 320px;
-        justify-content: space-evenly;
+        gap: 18px;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -231,10 +292,8 @@
         width: 80%;
     }
     .navBox {
-        height: 100vh;
         width: 330px;
         min-width: 330px;
-        background-color: brown;
     }
     .bigNavContainer {
         width: 330px;

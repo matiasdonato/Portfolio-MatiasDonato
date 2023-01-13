@@ -1,8 +1,63 @@
+:root #dark {
+    --background-color: #111111;
+    --primary-color-1: #1C1C1C;
+    --primary-color-2: #303339;
+    --secondary-color: #26282c;
+    --contrast-color: #FEE402;
+    --secondary-contrast-color: #b8a800;
+    --text-and-lines: antiquewhite;
+    --secondary-text-and-lines: rgb(187, 185, 185);
+    --opposite-text-and-lines: black;
+    --text-disabled: #cfcfcf;
+    --form-bg: #292929;
+    --form-text-color: #8f8f8f;
+    --submit-button-color: #dbc713;
+    --error-color: rgb(156, 0, 0);
+}
+
+:root #light {
+    --background-color: #727272;
+    --primary-color-1: #531414;
+    --primary-color-2: #0055ff;
+    --secondary-color: #0055ff;
+    --contrast-color: #423c00;
+    --secondary-contrast-color: #b8a800;
+    --text-and-lines: rgb(0, 0, 0);
+    --secondary-text-and-lines: rgb(46, 37, 37);
+    --opposite-text-and-lines: rgb(255, 255, 255);
+    --text-disabled: #cfcfcf;
+    --form-bg: #292929;
+    --form-text-color: #8f8f8f;
+    --submit-button-color: #dbc713;
+    --error-color: rgb(156, 0, 0);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #303339;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b090a', endColorstr='#061e1f', GradientType=0);
+    overflow: auto;
+}
+
 .appContainer {
     display: flex;
     flex-direction: column;
+    background: var(--background-color);
+    color: var(--text-and-lines);
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @media screen and (min-width: 1024px) {
@@ -11,78 +66,302 @@
     }
 }
 
-#dark .homeContainer {
-    background-color: #1C1C1C;
+.homeContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
 }
 
-#dark .yellow {
-    color: #FEE402;
+.yellow {
+    color: var(--contrast-color);
+    transition: all 0.5s;
 }
 
-#dark .homeContainer hr {
-    background-color: aliceblue;
+.homeContainer hr {
+    background-color: var(--text-and-lines);
+    transition: all 0.5s;
 }
 
-#dark .profileIcons {
-    fill: aliceblue;
+.profileIcons {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
 }
 
-#dark .bigNavContainer {
-    background-color: #1C1C1C;
-    border-bottom: aliceblue solid 1px;
+.bigNavContainer {
+    background-color: var(--primary-color-1);
+    border-bottom: var(--text-and-lines) solid 1px;
+    transition: all 0.5s;
 }
 
-#dark .navIcons {
-    fill: aliceblue;
+.navIcons {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
 }
 
-#dark .navLink {
-    background-color: #303339;
+.navLink {
+    background-color: var(--primary-color-2);
+    transition: all 0.5s;
 }
 
-#dark .navLink::before {
+.navLink p {
+    color: var(--text-and-lines);
+}
+
+.navLink::before {
     content: "";
     width: 100%;
     height: 8px;
-    background-color: #FEE402;
+    background-color: var(--contrast-color);
     position: absolute;
     animation: spinBorder 6s linear infinite;
+    transition: all 0.5s;
 }
 
-#dark .navLink::after {
-    background: #26282c;
+.navLink::after {
+    background: var(--secondary-color);
+    transition: all 0.5s;
 }
 
-#dark .sideNavLink {
-    background-color: #303339;
+.sideNavLink {
+    background-color: var(--primary-color-2);
+    transition: all 0.5s;
 }
 
-#dark .sideNavLink p {
-    color: aliceblue;
+.sideNavLink p {
+    color: var(--text-and-lines);
+    transition: all 0.5s;
 }
 
-#dark .sideNavLink::before {
-    background-color: #FEE402;
+.sideNavLink::before {
+    background-color: var(--contrast-color);
+    transition: all 0.5s;
 }
 
-#dark .sideNavLink::after {
-    background: #303339;
+.sideNavLink::after {
+    background: var(--primary-color-2);
+    transition: all 0.5s;
 }
 
-#dark .navMenu {
-    fill: aliceblue;
+.navMenu {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
 }
 
-#dark .navClose {
-    fill: aliceblue;
+.navClose {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
 }
 
-#dark .sideNavContainer {
-    background-color: #1C1C1C;
+.sideNavContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.switcherText {
+    color: rgb(187, 185, 185);
+    transition: all 0.5s;
+}
+
+.slider {
+    background-color: var(--secondary-text-and-lines);
+    transition: all 0.5s;
+}
+
+.slider::before {
+    background-color: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.english .slider {
+    background-color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.light .slider {
+    background-color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.descriptionContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.aboutLinksContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.aboutLinks {
+    color: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.aboutLinkInfo a {
+    color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.aboutLinkIcon {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.aboutInfoContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.aboutLenguageContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.aboutPoint {
+    background-color: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.skillsContainer p {
+    color: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.skillsIconsContainer:hover {
+    background-color: var(--primary-color-2);
+    transition: all 0.5s;
+}
+
+.portfolioContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.projectInfo {
+    background-color: var(--primary-color-2);
+    transition: all 0.5s;
+}
+
+.mainProjectInfo h3 {
+    color: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.projectInfoIcon {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.projectLinkContainer:hover {
+    background-color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.projectLinkContainer:hover p {
+    color: var(--opposite-text-and-lines);
+    transition: all 0.5s;
+}
+
+.projectLinkContainer:hover .projectInfoIcon {
+    fill: var(--opposite-text-and-lines);
+    transition: all 0.5s;
+}
+
+.projectLinkContainer p {
+    color: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.contactMeIconsContainer {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.contactMeIconsContainer a {
+    color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.contactMeIconsContainer a:hover {
+    color: var(--secondary-contrast-color);
+    transition: all 0.5s;
+}
+
+.contactMeIconsContainer a:hover .contactMeIconSvg {
+    fill: var(--secondary-contrast-color);
+    transition: all 0.5s;
+}
+
+.contactMeIconSvg {
+    fill: var(--text-and-lines);
+    transition: all 0.5s;
+}
+
+.contactForm {
+    background-color: var(--primary-color-1);
+    transition: all 0.5s;
+}
+
+.errorText {
+    color: var(--error-color);
+    transition: all 0.5s;
+}
+
+.contactInput {
+    color: var(--form-bg);
+    transition: all 0.5s;
+}
+
+.inputBox span {
+    color: var(--form-text-color);
+    transition: all 0.5s;
+}
+
+.inputBox i {
+    background-color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.borderInput {
+    border: var(--form-bg) solid 1px;
+    transition: all 0.5s;
+}
+
+.borderTextarea {
+    border: var(--form-bg) solid 1px;
+    transition: all 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span {
+    color: var(--contrast-color);
+    transition: all 0.5s;
+}
+
+.submitButton {
+    color: var(--opposite-text-and-lines);
+    background-color: var(--submit-button-color);
+    transition: all 0.5s;
+}
+
+.submitButton:disabled {
+    background-color: var(--form-bg);
+    color: var(--text-disabled);
+    transition: all 0.5s;
 }
 
 @media screen and (min-width: 1024px) {
-    #dark .bigNavContainer {
-        border-right: aliceblue solid 1px;
+    .bigNavContainer {
+        border-right: var(--text-and-lines) solid 1px;
+        transition: all 0.5s;
+    }
+    .aboutLinks a:hover {
+        color: var(--secondary-contrast-color);
+        transition: all 0.5s;
     }
 }

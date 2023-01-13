@@ -3,6 +3,10 @@ import emailjs from "emailjs-com"
 import loadingGif from "../assets/images/loading2.gif"
 
 import {ChangeEvent, FormEvent, useState} from "react"
+import SvgMail from "../assets/icons/svgMail"
+import SvgPhone from "../assets/icons/svgPhone"
+import SvgLinkedin from "../assets/icons/svgLinkedin"
+import SvgGitHub from "../assets/icons/svgGitHub"
 
 export default function Contact(){
 
@@ -119,6 +123,24 @@ export default function Contact(){
         <h2>Contact me!</h2>
       </div>
       <div className="contactContainer">
+        <div className="contactMeIconsContainer" >
+          <div className="contactMeIcon">
+            <SvgMail className= "contactMeIconSvg" />
+            <span>matiasdonato14@gmail.com</span>
+          </div>
+          <div className="contactMeIcon">
+            <SvgPhone className= "contactMeIconSvg" />
+            <span>+54 9 11 6209-1233</span>
+          </div>
+          <a href="https://www.linkedin.com/in/matías-donato-227488224/" target={"_blank"} rel="noreferrer" className="contactMeIcon" >
+            <SvgLinkedin className= "contactMeIconSvg" />
+            <span>Matias Donato</span>
+          </a>
+          <a href="https://github.com/matiasdonato" target={"_blank"} rel="noreferrer" className="contactMeIcon">
+            <SvgGitHub className= "contactMeIconSvg" />
+            <span>matiasdonato</span>
+          </a>
+        </div>
         <form className="contactForm" onSubmit={(e) => formSubmit(e)}>
           <div className="inputBox">
             <input className="contactInput" autoComplete="off" maxLength={24} type="text" required={true} name="name" value={contactForm.name} onChange={(e) => handleInput(e) } />

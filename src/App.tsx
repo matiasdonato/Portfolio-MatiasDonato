@@ -7,10 +7,19 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import "./css/app.css"
+import { useSelector } from 'react-redux';
 
 function App() {
+
+  interface AppState{
+    lenguage : string
+    mode: string
+}
+
+  let {lenguage, mode} = useSelector((state: AppState) => state)
+
   return (
-    <div className='appContainer' id='dark'>
+    <div className='appContainer' id={mode}>
       <Route path={"/"} render={()=> <Nav/> } />
       <Route exact path={"/"} render={()=> <Home/> } />
       <Route path={"/about"} render={()=> <AboutMe/> } />

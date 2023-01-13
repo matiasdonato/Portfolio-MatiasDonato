@@ -4,6 +4,7 @@ import profilePhoto from "../assets/images/profilePhoto.png"
 import SvgLinkedin from "../assets/icons/svgLinkedin"
 import SvgGitHub from "../assets/icons/svgGitHub"
 import SvgFile from "../assets/icons/svgFile"
+
 import Resume from "../assets/files/Full-Stack-Developer-Resume-Matias-Donato.pdf"
 
 export default function Home(){
