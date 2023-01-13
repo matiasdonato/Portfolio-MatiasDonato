@@ -108,7 +108,7 @@ export default function Nav(){
                                 <Link to={"/contact"}>
                                     <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contact Me</p> </div >
                                 </Link>
-                                <div className="switchersBox">
+                                <div className="switchersBoxOnPhone">
                                     <div className="switcherContainer">
                                         <p className="switcherText">ESP</p>
                                         <label className={`switch ${lenguage} `}>
@@ -193,7 +193,7 @@ export default function Nav(){
                                 <Link to={"/contact"}>
                                     <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contactame</p> </div >
                                 </Link>
-                                <div className="switchersBox">
+                                <div className="switchersBoxOnPhone">
                                     <div className="switcherContainer">
                                         <p className="switcherText">ESP</p>
                                         <label className={`switch ${lenguage} `}>
