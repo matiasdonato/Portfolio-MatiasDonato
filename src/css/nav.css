@@ -243,7 +243,17 @@
     width: 50%;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 8px;
+}
+
+.modeIcons {
+    z-index: 1;
+    width: 26px;
+    height: 26px;
+}
+
+.littleMarginLeft {
+    margin-left: 4px;
 }
 
 .switcherText {

@@ -13,6 +13,8 @@ import SvgPortfolio from "../assets/icons/svgPortfolio"
 import SvgContact from "../assets/icons/svgContact"
 import { useDispatch, useSelector } from "react-redux"
 import { changeLenguage, changeMode } from "../redux/actions/actions"
+import SvgMoon from "../assets/icons/svgMoon"
+import SvgSun from "../assets/icons/svgSun"
 
 
 
@@ -74,11 +76,11 @@ export default function Nav(){
                                 <p className="switcherText">ENG</p>
                             </div>
                             <div className="switcherContainer">
-                                <p>🌙</p>
+                                <SvgMoon className="modeIcons" />
                                 <label className={`switch ${mode} `}>
                                     <span className="slider" onClick={() => changeMode(mode, dispatch)} ></span>
                                 </label>
-                                <p>🌞</p>
+                                <SvgSun className="modeIcons littleMarginLeft"/>
                             </div>
                         </div>
                     </div>
@@ -117,11 +119,11 @@ export default function Nav(){
                                         <p className="switcherText">ENG</p>
                                     </div>
                                     <div className="switcherContainer">
-                                        <p>🌙</p>
-                                        <label className={`switch ${mode} `}>
-                                            <span className="slider" onClick={() => changeMode(mode, dispatch)} ></span>
-                                        </label>
-                                        <p>🌞</p>
+                                    <SvgMoon className="modeIcons" />
+                                    <label className={`switch ${mode} `}>
+                                        <span className="slider" onClick={() => changeMode(mode, dispatch)} ></span>
+                                    </label>
+                                    <SvgSun className="modeIcons littleMarginLeft"/>
                                     </div>
                                 </div>
                             </div>
@@ -159,11 +161,11 @@ export default function Nav(){
                                 <p className="switcherText">ENG</p>
                             </div>
                             <div className="switcherContainer">
-                                <p>🌙</p>
+                                <SvgMoon className="modeIcons" />
                                 <label className={`switch ${mode} `}>
                                     <span className="slider" onClick={() => changeMode(mode, dispatch)} ></span>
                                 </label>
-                                <p>🌞</p>
+                                <SvgSun className="modeIcons littleMarginLeft"/>
                             </div>
                         </div>
                     </div>
@@ -202,11 +204,11 @@ export default function Nav(){
                                         <p className="switcherText">ENG</p>
                                     </div>
                                     <div className="switcherContainer">
-                                        <p>🌙</p>
-                                        <label className={`switch ${mode} `}>
-                                            <span className="slider" onClick={() => changeMode(mode, dispatch)} ></span>
-                                        </label>
-                                        <p>🌞</p>
+                                    <SvgMoon className="modeIcons" />
+                                    <label className={`switch ${mode} `}>
+                                        <span className="slider" onClick={() => changeMode(mode, dispatch)} ></span>
+                                    </label>
+                                    <SvgSun className="modeIcons littleMarginLeft"/>
                                     </div>
                                 </div>
                             </div>

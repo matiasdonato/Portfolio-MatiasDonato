@@ -119,7 +119,7 @@ export default function Projects(){
                   <div className="projectInfo">
                     <div className="mainProjectInfo">
                       <div className="projectTitleContainer">
-                        <h3>Weather App</h3>
+                        <h3>Black Clover Tattoo</h3>
                       </div>
                       <div className="projectInfoContainer">
                         <a href="https://black-clover-tattoo.netlify.app" target={"_blank"} rel="noreferrer">

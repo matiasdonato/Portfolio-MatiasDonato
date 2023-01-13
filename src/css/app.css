@@ -12,24 +12,26 @@
     --form-bg: #292929;
     --form-text-color: #8f8f8f;
     --submit-button-color: #dbc713;
+    --submit-button-shadow: 0px 0px 21px -8px rgba(255, 255, 255, 1);
     --error-color: rgb(156, 0, 0);
 }
 
 :root #light {
-    --background-color: #727272;
-    --primary-color-1: #531414;
-    --primary-color-2: #0055ff;
-    --secondary-color: #0055ff;
-    --contrast-color: #423c00;
-    --secondary-contrast-color: #b8a800;
+    --background-color: #dbdbdb;
+    --primary-color-1: #ced4da;
+    --primary-color-2: #cdd1cd;
+    --secondary-color: #adb5bd;
+    --contrast-color: #3581b8;
+    --secondary-contrast-color: #005379;
     --text-and-lines: rgb(0, 0, 0);
     --secondary-text-and-lines: rgb(46, 37, 37);
     --opposite-text-and-lines: rgb(255, 255, 255);
     --text-disabled: #cfcfcf;
     --form-bg: #292929;
-    --form-text-color: #8f8f8f;
-    --submit-button-color: #dbc713;
-    --error-color: rgb(156, 0, 0);
+    --form-text-color: #2b2b2b;
+    --submit-button-color: #38729b;
+    --error-color: rgb(247, 57, 57);
+    --submit-button-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
 }
 
 body::-webkit-scrollbar {
@@ -89,6 +91,11 @@ body {
 .bigNavContainer {
     background-color: var(--primary-color-1);
     border-bottom: var(--text-and-lines) solid 1px;
+    transition: all 0.5s;
+}
+
+.modeIcons {
+    fill: var(--text-and-lines);
     transition: all 0.5s;
 }
 
@@ -157,7 +164,7 @@ body {
 }
 
 .switcherText {
-    color: rgb(187, 185, 185);
+    color: var(--form-text-color);
     transition: all 0.5s;
 }
 
@@ -346,6 +353,7 @@ body {
 .submitButton {
     color: var(--opposite-text-and-lines);
     background-color: var(--submit-button-color);
+    box-shadow: var(--submit-button-shadow);
     transition: all 0.5s;
 }
 
