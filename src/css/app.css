@@ -358,6 +358,16 @@ body {
     transition: all 0.5s;
 }
 
+.contactModal {
+    background-color: var(--primary-color-2);
+}
+
+.closeModalButton {
+    background-color: var(--error-color);
+    box-shadow: var(--submit-button-shadow);
+    color: var(--text-and-lines);
+}
+
 @media screen and (min-width: 1024px) {
     .bigNavContainer {
         border-right: var(--text-and-lines) solid 1px;
