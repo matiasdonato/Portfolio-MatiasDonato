@@ -32,10 +32,10 @@ import Postman from "../assets/images/postman.png"
 export default function Skills(){
     return (
       <div className="bigSkillsContainer" >
-        <div className="skillsTextContainer" >
+        <div className="skillsTextContainer animate__animated animate__fadeInLeft" >
           <h2>Skills</h2>
         </div>
-        <div className="skillsContainer">
+        <div className="skillsContainer animate__animated animate__backInUp">
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={HTML} alt="HTML Logo" className="skillsIcons" />
             <p>HTML</p>

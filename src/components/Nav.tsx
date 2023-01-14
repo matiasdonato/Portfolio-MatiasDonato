@@ -5,7 +5,6 @@ import SvgClose from "../assets/icons/svgClose"
 import SvgMenu from "../assets/icons/svgMenu"
 import profilePhoto from "../assets/images/profilePhoto.png"
 import "../css/nav.css"
-import "animate.css"
 import SvgHome from "../assets/icons/svgHome"
 import SvgUser from "../assets/icons/svgUser"
 import SvgSkills from "../assets/icons/svgSkills"
@@ -67,7 +66,7 @@ export default function Nav(){
                         <Link className="buttonLink" to={"/contact"}>
                             <div className="navLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contact Me</p></div>
                         </Link>
-                        <div className="switchersBox">
+                        <div className="switchersBox animate__animated animate__bounceIn">
                             <div className="switcherContainer">
                                 <p className="switcherText">ESP</p>
                                 <label className={`switch ${lenguage} `}>
@@ -85,7 +84,7 @@ export default function Nav(){
                         </div>
                     </div>
                     
-                    <div className="logo">
+                    <div className="logo animate__animated animate__backInDown">
                         <img src={profilePhoto} alt="Matias Donato Logo"/>
                     </div>
                     
@@ -110,7 +109,7 @@ export default function Nav(){
                                 <Link to={"/contact"}>
                                     <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contact Me</p> </div >
                                 </Link>
-                                <div className="switchersBoxOnPhone">
+                                <div className="switchersBoxOnPhone animate__animated animate__bounceIn">
                                     <div className="switcherContainer">
                                         <p className="switcherText">ESP</p>
                                         <label className={`switch ${lenguage} `}>
@@ -152,7 +151,7 @@ export default function Nav(){
                         <Link className="buttonLink" to={"/contact"}>
                             <div className="navLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contactame</p></div>
                         </Link>
-                        <div className="switchersBox">
+                        <div className="switchersBox animate__animated animate__bounceIn">
                             <div className="switcherContainer">
                                 <p className="switcherText">ESP</p>
                                 <label className={`switch ${lenguage} `}>
@@ -170,7 +169,7 @@ export default function Nav(){
                         </div>
                     </div>
                     
-                    <div className="logo">
+                    <div className="logo animate__animated animate__backInDown">
                         <img src={profilePhoto} alt="Matias Donato Logo"/>
                     </div>
                     
@@ -195,7 +194,7 @@ export default function Nav(){
                                 <Link to={"/contact"}>
                                     <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contactame</p> </div >
                                 </Link>
-                                <div className="switchersBoxOnPhone">
+                                <div className="switchersBoxOnPhone animate__animated animate__bounceIn">
                                     <div className="switcherContainer">
                                         <p className="switcherText">ESP</p>
                                         <label className={`switch ${lenguage} `}>

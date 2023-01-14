@@ -129,11 +129,11 @@ export default function Contact(){
         </div>
       }
       <div className={`${showModal === true && "blurBg"} `} >
-        <div className="contactTextContainer" >
+        <div className="contactTextContainer animate__animated animate__fadeInLeft" >
           <h2>Contact me!</h2>
         </div>
         <div className="contactContainer">
-          <div className="contactMeIconsContainer" >
+          <div className="contactMeIconsContainer animate__animated animate__fadeInDown" >
             <div className="contactMeIcon">
               <SvgMail className= "contactMeIconSvg" />
               <span>matiasdonato14@gmail.com</span>
@@ -151,7 +151,7 @@ export default function Contact(){
               <span>matiasdonato</span>
             </a>
           </div>
-          <form className="contactForm" onSubmit={(e) => formSubmit(e)}>
+          <form className="contactForm animate__animated animate__fadeIn" onSubmit={(e) => formSubmit(e)}>
             <div className="inputBox">
               <input className="contactInput" autoComplete="off" maxLength={24} type="text" required={true} name="name" value={contactForm.name} onChange={(e) => handleInput(e) } />
               <span>Name</span>

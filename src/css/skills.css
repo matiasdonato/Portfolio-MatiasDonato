@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .skillsTextContainer h2 {
@@ -87,7 +88,7 @@
         transform: scale(1.1);
     }
     .skillsTextContainer h2 {
-        font-size: 4.3rem;
+        font-size: 3.3rem;
     }
     .skillsTextContainer {
         margin-top: 20px;

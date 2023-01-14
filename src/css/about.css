@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .aboutTextContainer h2 {
@@ -110,6 +111,7 @@
     margin-bottom: 20px;
     padding: 2.8vh;
     width: 88%;
+    animation-delay: 0.5s;
 }
 
 .aboutInfoContainer h5 {
@@ -181,9 +183,10 @@
     }
     .aboutTextContainer {
         margin-left: 4vh;
+        margin-top: 20px;
     }
     .aboutTextContainer h2 {
-        font-size: 4.3rem;
+        font-size: 3.3rem;
     }
     .aboutContainer {
         width: 100%;

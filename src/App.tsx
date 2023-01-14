@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Nav from './components/Nav';
 import "./css/app.css"
 import { useSelector } from 'react-redux';
+import "animate.css";
 
 function App() {
 

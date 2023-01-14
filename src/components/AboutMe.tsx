@@ -11,18 +11,18 @@ import SvgLocation from "../assets/icons/svgLocation"
 export default function AboutMe(){
     return (
       <div className="bigAboutContainer" >
-        <div className="aboutTextContainer" >
+        <div className="aboutTextContainer animate__animated animate__fadeInLeft" >
           <h2>
             About Me
           </h2>
         </div>
         <div className="aboutContainer">
-          <div className="descriptionContainer">
+          <div className="descriptionContainer animate__animated animate__bounceInRight">
             <h5>{"<Matias Donato />"} <b className="yellow">{"<Full Stack Web Developer/>"}</b></h5>
             <p>
               Hi! My name is Matias Donato and im a passionate Full Stack Developer from Argentina. I have experience working with JavaScript, TypeScript, NodeJS, Express, React, Redux, and SQL, among other technologies of the same nature. I can code a website from the ground up, Front or Back, including the database. I consider myself a proactive and creative individual with a positive attitude, strong organizational skills, a dynamic teamwork style, and strong problem-solving abilities. I also have a good handle of Git Flow, a wide capacity for learning, and a good level of english.</p>
           </div>
-          <div className="aboutLinksContainer">
+          <div className="aboutLinksContainer animate__animated animate__bounceInUp">
             <div className="aboutLinks">
               <SvgLinkedin className="aboutLinkIcon"/> 
               <div className="aboutLinkInfo">
@@ -68,7 +68,7 @@ export default function AboutMe(){
           </div>
           <div className="educationAndExperienceContainer">
             <div className="bigAboutInfoContainer">
-              <div className="aboutInfoContainer">
+              <div className="aboutInfoContainer animate__animated animate__bounceIn">
                 <h5>Experience</h5>
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
@@ -92,7 +92,7 @@ export default function AboutMe(){
                   </div>
                 </div>
               </div>
-              <div className="aboutInfoContainer">
+              <div className="aboutInfoContainer animate__animated animate__bounceIn">
                 <h5>Education</h5>
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
@@ -126,28 +126,28 @@ export default function AboutMe(){
               </div>
             </div>
           </div>
-          <div className="aboutLenguageContainer">
-                <h5>Lenguages</h5>
-                <div className="aboutLineAndInfo">
-                  <hr className="aboutInfoLine" />
-                  <div>
-                    <div className="aboutInfo">
-                      <div className="infoTitle">
-                        <div className="aboutPoint" />
-                        <h6 className="infoTitleName">English</h6>
-                      </div>
-                      <p>C1</p>
-                    </div>
-                    <div className="aboutInfo">
-                      <div className="infoTitle">
-                        <div className="aboutPoint" />
-                        <h6 className="infoTitleName">Spanish</h6>
-                      </div>
-                      <p>Native</p>
-                    </div>
+          <div className="aboutLenguageContainer animate__animated animate__bounceIn">
+            <h5>Lenguages</h5>
+            <div className="aboutLineAndInfo">
+              <hr className="aboutInfoLine" />
+              <div>
+                <div className="aboutInfo">
+                  <div className="infoTitle">
+                    <div className="aboutPoint" />
+                    <h6 className="infoTitleName">English</h6>
                   </div>
+                  <p>C1</p>
+                </div>
+                <div className="aboutInfo">
+                  <div className="infoTitle">
+                    <div className="aboutPoint" />
+                    <h6 className="infoTitleName">Spanish</h6>
+                  </div>
+                  <p>Native</p>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
       </div>
     )

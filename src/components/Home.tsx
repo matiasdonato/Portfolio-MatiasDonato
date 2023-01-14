@@ -10,7 +10,7 @@ import Resume from "../assets/files/Full-Stack-Developer-Resume-Matias-Donato.pd
 export default function Home(){
     return (
       <div className="bigHomeContainer">
-        <div className="homeContainer">
+        <div className="homeContainer animate__animated animate__fadeInRight">
           <div className="profilePhotoContainer">
             <img className="photo" src={profilePhoto} alt="My Photo" />
           </div>

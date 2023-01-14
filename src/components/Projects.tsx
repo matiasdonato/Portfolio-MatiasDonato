@@ -11,11 +11,11 @@ import SvgGitHub from "../assets/icons/svgGitHub"
 export default function Projects(){
     return (
       <div className="bigPortfolioContainer" >
-        <div className="portfolioTextContainer" >
+        <div className="portfolioTextContainer animate__animated animate__fadeInLeft" >
           <h2>Portfolio</h2>
           <p>My Projects:</p>
         </div>
-        <div className="portfolioContainerPositionBox">
+        <div className="portfolioContainerPositionBox animate__animated animate__fadeInRight">
           <div className="portfolioContainer">
               <div className="projectContainer">
                 <a href="https://dogs-app-matiasdonato.vercel.app" target={"_blank"} rel="noreferrer">
