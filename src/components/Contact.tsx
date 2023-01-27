@@ -128,7 +128,7 @@ export default function Contact(){
           <button className="closeModalButton" onClick={() => setShowModal(false)} >Close</button>
         </div>
       }
-      <div className={`${showModal === true && "blurBg"} `} >
+      <div className={`${showModal === true && "blurBg"} contactBox`} >
         <div className="contactTextContainer animate__animated animate__fadeInLeft" >
           <h2>Contact me!</h2>
         </div>

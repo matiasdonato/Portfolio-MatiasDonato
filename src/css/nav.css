@@ -29,6 +29,7 @@
 
 .logo img {
     height: 80%;
+    border-radius: 5px;
 }
 
 .navContainer {
@@ -237,6 +238,7 @@
     height: 70px;
     align-items: center;
     margin-top: 15px;
+    animation-delay: 1.5s;
 }
 
 .switcherContainer {

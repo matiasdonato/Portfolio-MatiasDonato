@@ -3,7 +3,7 @@ import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import SvgClose from "../assets/icons/svgClose"
 import SvgMenu from "../assets/icons/svgMenu"
-import profilePhoto from "../assets/images/profilePhoto.png"
+import logo from "../assets/images/logo.png"
 import "../css/nav.css"
 import SvgHome from "../assets/icons/svgHome"
 import SvgUser from "../assets/icons/svgUser"
@@ -84,9 +84,13 @@ export default function Nav(){
                         </div>
                     </div>
                     
-                    <div className="logo animate__animated animate__backInDown">
-                        <img src={profilePhoto} alt="Matias Donato Logo"/>
-                    </div>
+                    
+                        <div className="logo animate__animated animate__backInDown">
+                            <Link to={"/"} className="logo" >
+                                <img src={logo} alt="Matias Donato "/>
+                            </Link>
+                        </div>
+                    
                     
                     <div className={`bigSideNavContainer ${sideNavHeight}`}>
                         <SvgMenu className="navMenu" onClick={() => toggleSideNav()} />
@@ -170,7 +174,9 @@ export default function Nav(){
                     </div>
                     
                     <div className="logo animate__animated animate__backInDown">
-                        <img src={profilePhoto} alt="Matias Donato Logo"/>
+                        <Link to={"/"} className="logo" >
+                            <img src={logo} alt="Matias Donato "/>
+                        </Link>
                     </div>
                     
                     <div className={`bigSideNavContainer ${sideNavHeight}`}>

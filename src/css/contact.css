@@ -298,8 +298,14 @@
         padding: 0;
         width: 90%;
     }
-    .bigContactContainer {
-        height: fit-content;
+    .contactBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactTextContainer {
+        display: flex;
+        justify-content: center;
     }
     .contactMeIconsContainer {
         width: 90%;
