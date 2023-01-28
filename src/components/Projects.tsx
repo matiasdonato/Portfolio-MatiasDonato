@@ -55,7 +55,7 @@ export default function Projects(){
                       <h3>NFTRADE</h3>
                     </div>
                     <div className="projectInfoContainer">
-                      <a href="https://pf-nftrade.netlify.app" target={"_blank"} rel="noreferrer">
+                      <a href="https://nftrade-one.vercel.app" target={"_blank"} rel="noreferrer">
                         <div className="projectLinkContainer">
                           <p>Deploy</p>
                           <SvgOpenWindow className="projectInfoIcon" />
