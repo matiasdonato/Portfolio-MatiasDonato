@@ -45,26 +45,28 @@ export default function Nav(){
     console.log(lenguage, mode)
     let location : string = useLocation().pathname
 
+    console.log(location)
+
 
     if (lenguage === "english") {
         return (
             <div className="navBox">
                 <div className="bigNavContainer">
                     <div className="navContainer ">
-                        <Link className="buttonLink" to={"/"}>
-                            <div className="navLink animate__animated animate__bounceIn"><SvgHome className="navIcons"/> <p>Home</p></div>
+                        <Link className=" buttonLink" to={"/"}>
+                            <div className={` ${location === "/" && "navLinkAnimated"}  navLink animate__animated animate__bounceIn`}><SvgHome className="navIcons"/> <p>Home</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/about"}>
-                            <div className="navLink animate__animated animate__bounceIn link1"><SvgUser className="navIcons"/> <p>About Me</p></div>
+                            <div className={`${location === "/about" && "navLinkAnimated"}  navLink animate__animated animate__bounceIn link1`}><SvgUser className="navIcons"/> <p>About Me</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/skills"}>
-                            <div className="navLink animate__animated animate__bounceIn link2"><SvgSkills className="navIcons" /> <p>Skills</p></div>
+                            <div className={`${location === "/skills" && "navLinkAnimated"}  navLink animate__animated animate__bounceIn link2`}><SvgSkills className="navIcons" /> <p>Skills</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/projects"}>
-                            <div className="navLink animate__animated animate__bounceIn link3"><SvgPortfolio className="navIcons" /> <p>Portfolio</p></div>
+                            <div className={`${location === "/projects" && "navLinkAnimated"}  navLink animate__animated animate__bounceIn link3`}><SvgPortfolio className="navIcons" /> <p>Portfolio</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/contact"}>
-                            <div className="navLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contact Me</p></div>
+                            <div className={`${location === "/contact" && "navLinkAnimated"}  navLink animate__animated animate__bounceIn link4`}><SvgContact className={"navIcons"} /> <p>Contact Me</p></div>
                         </Link>
                         <div className="switchersBox animate__animated animate__bounceIn">
                             <div className="switcherContainer">

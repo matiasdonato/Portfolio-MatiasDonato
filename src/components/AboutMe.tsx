@@ -17,12 +17,12 @@ export default function AboutMe(){
           </h2>
         </div>
         <div className="aboutContainer">
-          <div className="descriptionContainer animate__animated animate__bounceInRight">
+          <div className="descriptionContainer animate__animated animate__fadeInUp">
             <h5>{"<Matias Donato />"} <b className="yellow">{"<Full Stack Web Developer/>"}</b></h5>
             <p>
-              Hi! My name is Matias Donato and im a passionate Full Stack Developer from Argentina. I have experience working with JavaScript, TypeScript, NodeJS, Express, React, Redux, and SQL, among other technologies of the same nature. I can code a website from the ground up, Front or Back, including the database. I consider myself a proactive and creative individual with a positive attitude, strong organizational skills, a dynamic teamwork style, and strong problem-solving abilities. I also have a good handle of Git Flow, a wide capacity for learning, and a good level of english.</p>
+              Hi! My name is Matias Donato and I am a passionate Full Stack Developer from Argentina. I have experience working with JavaScript, TypeScript, NodeJS, Express, React, Redux, and SQL, among other technologies of the same nature. I can code a website from the ground up, Front or Back, including the database. I consider myself a proactive and creative individual with a positive attitude, strong organizational skills, a dynamic teamwork style, and strong problem-solving abilities. I also have a good handle of Git Flow, a wide capacity for learning, and a good level of english.</p>
           </div>
-          <div className="aboutLinksContainer animate__animated animate__bounceInUp">
+          <div className="aboutLinksContainer animate__animated animate__fadeInUp">
             <div className="aboutLinks">
               <SvgLinkedin className="aboutLinkIcon"/> 
               <div className="aboutLinkInfo">
@@ -68,7 +68,7 @@ export default function AboutMe(){
           </div>
           <div className="educationAndExperienceContainer">
             <div className="bigAboutInfoContainer">
-              <div className="aboutInfoContainer animate__animated animate__bounceIn">
+              <div className="aboutInfoContainer animate__animated animate__fadeInLeft">
                 <h5>Experience</h5>
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
@@ -92,7 +92,7 @@ export default function AboutMe(){
                   </div>
                 </div>
               </div>
-              <div className="aboutInfoContainer animate__animated animate__bounceIn">
+              <div className="aboutInfoContainer animate__animated animate__fadeInRight">
                 <h5>Education</h5>
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
@@ -126,7 +126,7 @@ export default function AboutMe(){
               </div>
             </div>
           </div>
-          <div className="aboutLenguageContainer animate__animated animate__bounceIn">
+          <div className="aboutLenguageContainer animate__animated animate__fadeInUp">
             <h5>Lenguages</h5>
             <div className="aboutLineAndInfo">
               <hr className="aboutInfoLine" />
@@ -136,7 +136,7 @@ export default function AboutMe(){
                     <div className="aboutPoint" />
                     <h6 className="infoTitleName">English</h6>
                   </div>
-                  <p>C1</p>
+                  <p>C2 - Proeficient. <a href="https://www.efset.org/cert/cb7bgb" target="_blank" rel="noreferrer" className="yellow">Certificate Link</a></p>
                 </div>
                 <div className="aboutInfo">
                   <div className="infoTitle">

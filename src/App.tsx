@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import React from 'react';
@@ -9,6 +10,8 @@ import Nav from './components/Nav';
 import "./css/app.css"
 import { useSelector } from 'react-redux';
 import "animate.css";
+import BackgroundAnimation from './components/BackgroundAnimation';
+
 
 function App() {
 
@@ -27,6 +30,8 @@ function App() {
       <Route path={"/skills"} render={()=> <Skills/> } />
       <Route path={"/projects"} render={()=> <Projects/> } />
       <Route path={"/contact"} render={()=> <Contact/> } />
+      <BackgroundAnimation/>
+      
     </div>
   );
 }

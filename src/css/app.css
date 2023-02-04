@@ -3,8 +3,9 @@
     --primary-color-1: #1C1C1C;
     --primary-color-2: #303339;
     --secondary-color: #26282c;
-    --contrast-color: #FEE402;
-    --secondary-contrast-color: #b8a800;
+    --contrast-color: #ddca1e;
+    --shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
+    --secondary-contrast-color: #afa532;
     --text-and-lines: antiquewhite;
     --secondary-text-and-lines: rgb(187, 185, 185);
     --opposite-text-and-lines: black;
@@ -17,12 +18,13 @@
 }
 
 :root #light {
-    --background-color: #dbdbdb;
-    --primary-color-1: #ced4da;
-    --primary-color-2: #cdd1cd;
+    --background-color: #C0C5CD;
+    --primary-color-1: #C0C5CD;
+    --primary-color-2: #abafb6;
     --secondary-color: #adb5bd;
-    --contrast-color: #3581b8;
-    --secondary-contrast-color: #005379;
+    --contrast-color: #3E588F;
+    --shadow: 0px 0px 9px 4px rgba(151, 151, 151, 0.86);
+    --secondary-contrast-color: #8EA7E9;
     --text-and-lines: rgb(0, 0, 0);
     --secondary-text-and-lines: rgb(46, 37, 37);
     --opposite-text-and-lines: rgb(255, 255, 255);
@@ -60,6 +62,7 @@ body {
     color: var(--text-and-lines);
     align-items: center;
     min-height: 100vh;
+    height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -68,9 +71,18 @@ body {
     }
 }
 
+.bubbles span {
+    background: var(--contrast-color);
+    border-radius: 1000px;
+    box-shadow: 0 0 0 5px var(--secondary-contrast-color), 0 0 50px var(--contrast-color), 0 0 100px var(--contrast-color);
+    animation: bubble-animation 150s linear infinite;
+    animation-duration: calc(240s/ var(--i));
+}
+
 .homeContainer {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .yellow {
@@ -92,6 +104,11 @@ body {
     background-color: var(--primary-color-1);
     border-bottom: var(--text-and-lines) solid 1px;
     transition: all 0.5s;
+    box-shadow: var(--shadow);
+}
+
+.buttonLink:hover {
+    box-shadow: var(--shadow);
 }
 
 .modeIcons {
@@ -113,13 +130,8 @@ body {
     color: var(--text-and-lines);
 }
 
-.navLink::before {
-    content: "";
-    width: 100%;
-    height: 8px;
+.navLinkAnimated::before {
     background-color: var(--contrast-color);
-    position: absolute;
-    animation: spinBorder 6s linear infinite;
     transition: all 0.5s;
 }
 
@@ -138,7 +150,7 @@ body {
     transition: all 0.5s;
 }
 
-.sideNavLink::before {
+.sideNavLinkAnimated::before {
     background-color: var(--contrast-color);
     transition: all 0.5s;
 }
@@ -186,11 +198,13 @@ body {
 .descriptionContainer {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .aboutLinksContainer {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .aboutLinks {
@@ -211,16 +225,23 @@ body {
 .aboutInfoContainer {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .aboutLenguageContainer {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .aboutPoint {
     background-color: var(--text-and-lines);
     transition: all 0.5s;
+}
+
+.skillsContainer {
+    background-color: var(--primary-color-1);
+    box-shadow: var(--shadow);
 }
 
 .skillsContainer p {
@@ -231,16 +252,23 @@ body {
 .skillsIconsContainer:hover {
     background-color: var(--primary-color-2);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .portfolioContainer {
+    box-shadow: var(--shadow);
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+}
+
+.projectContainer {
+    box-shadow: var(--shadow);
 }
 
 .projectInfo {
     background-color: var(--primary-color-2);
     transition: all 0.5s;
+    box-shadow: var(--shadow)
 }
 
 .mainProjectInfo h3 {
@@ -251,6 +279,10 @@ body {
 .projectInfoIcon {
     fill: var(--text-and-lines);
     transition: all 0.5s;
+}
+
+.projectLinkContainer {
+    box-shadow: var(--shadow);
 }
 
 .projectLinkContainer:hover {
@@ -276,6 +308,7 @@ body {
 .contactMeIconsContainer {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .contactMeIconsContainer a {
@@ -301,6 +334,7 @@ body {
 .contactForm {
     background-color: var(--primary-color-1);
     transition: all 0.5s;
+    box-shadow: var(--shadow);
 }
 
 .errorText {
@@ -360,6 +394,7 @@ body {
 
 .contactModal {
     background-color: var(--primary-color-2);
+    box-shadow: var(--shadow);
 }
 
 .closeModalButton {

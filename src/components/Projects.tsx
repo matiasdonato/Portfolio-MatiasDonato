@@ -17,6 +17,36 @@ export default function Projects(){
         </div>
         <div className="portfolioContainerPositionBox animate__animated animate__fadeInRight">
           <div className="portfolioContainer">
+              <div className="projectContainer">               
+                <img src={nftradeImage} alt="Dogs App Matias Donato" className="projectImage" />
+                <div className="projectInfo">
+                  <div className="mainProjectInfo">
+                    <div className="projectTitleContainer">
+                      <h3>NFTRADE</h3>
+                    </div>
+                    <div className="projectInfoContainer">
+                      <a href="https://nftrade-one.vercel.app" target={"_blank"} rel="noreferrer">
+                        <div className="projectLinkContainer">
+                          <p>Deploy</p>
+                          <SvgOpenWindow className="projectInfoIcon" />
+                        </div>
+                      </a>
+                      <a href="https://www.linkedin.com/posts/mat%C3%ADas-donato-227488224_work-team-react-activity-7027768436130787329-Ou0C?utm_source=share&utm_medium=member_desktop" target={"_blank"} rel="noreferrer">
+                        <div className="projectLinkContainer">
+                          <p>Info</p>
+                          <SvgInfo className="projectInfoIcon" />
+                        </div>
+                      </a>
+                      <a href="https://github.com/NicoCastagnet/PF-NFTRADE" target={"_blank"} rel="noreferrer">
+                        <div className="projectLinkContainer">
+                          <p>Github</p>
+                          <SvgGitHub className="projectInfoIcon" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="projectContainer">
                 <img src={dogsAppImage} alt="Dogs App Matias Donato" className="projectImage" />
                 <div className="projectInfo">
@@ -38,36 +68,6 @@ export default function Projects(){
                         </div>
                       </a>
                       <a href="https://github.com/matiasdonato/Dogs-App--PI-Henry" target={"_blank"} rel="noreferrer">
-                        <div className="projectLinkContainer">
-                          <p>Github</p>
-                          <SvgGitHub className="projectInfoIcon" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="projectContainer">               
-                <img src={nftradeImage} alt="Dogs App Matias Donato" className="projectImage" />
-                <div className="projectInfo">
-                  <div className="mainProjectInfo">
-                    <div className="projectTitleContainer">
-                      <h3>NFTRADE</h3>
-                    </div>
-                    <div className="projectInfoContainer">
-                      <a href="https://nftrade-one.vercel.app" target={"_blank"} rel="noreferrer">
-                        <div className="projectLinkContainer">
-                          <p>Deploy</p>
-                          <SvgOpenWindow className="projectInfoIcon" />
-                        </div>
-                      </a>
-                      <a href="https://www.linkedin.com/in/matías-donato-227488224/details/projects/" target={"_blank"} rel="noreferrer">
-                        <div className="projectLinkContainer">
-                          <p>Info</p>
-                          <SvgInfo className="projectInfoIcon" />
-                        </div>
-                      </a>
-                      <a href="https://github.com/NicoCastagnet/PF-NFTRADE" target={"_blank"} rel="noreferrer">
                         <div className="projectLinkContainer">
                           <p>Github</p>
                           <SvgGitHub className="projectInfoIcon" />

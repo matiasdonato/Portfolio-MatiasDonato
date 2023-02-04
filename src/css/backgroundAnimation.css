@@ -1,0 +1,69 @@
+.bgAnimation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 1330px;
+    overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .bgAnimation {
+        left: 330px;
+    }
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    margin: 0 4px;
+    border-radius: 1000px;
+    animation: bubble-animation 1000s linear infinite;
+    animation-duration: calc(240s/ var(--i));
+}
+
+
+/* .bubbles span:nth-child(even) {
+    box-shadow: 0 0 0 10px #005379, 0 0 50px #3581b8, 0 0 100px #3581b8;
+    background: #3581b8;
+} */
+
+.bubbles span:nth-of-type(1n) {
+    width: 12px;
+    height: 12px;
+}
+
+.bubbles span:nth-of-type(2n) {
+    width: 10px;
+    height: 10px;
+}
+
+.bubbles span:nth-of-type(3n) {
+    width: 8px;
+    height: 8px;
+}
+
+.bubbles span:nth-of-type(4n) {
+    width: 6px;
+    height: 6px;
+}
+
+@keyframes bubble-animation {
+    0% {
+        transform: translateY(100vh) scale(0.2);
+    }
+    40% {
+        transform: translateY(56vh) scale(0.3);
+    }
+    70% {
+        transform: translateY(23vh) scale(0.4);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0.2);
+    }
+}
