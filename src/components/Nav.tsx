@@ -3,7 +3,8 @@ import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import SvgClose from "../assets/icons/svgClose"
 import SvgMenu from "../assets/icons/svgMenu"
-import logo from "../assets/images/logo.png"
+import lightLogo from "../assets/images/lightmodeLogo.png"
+import darkLogo from "../assets/images/darkmodeLogo.png"
 import "../css/nav.css"
 import SvgHome from "../assets/icons/svgHome"
 import SvgUser from "../assets/icons/svgUser"
@@ -89,7 +90,7 @@ export default function Nav(){
                     
                         <div className="logo animate__animated animate__backInDown">
                             <Link to={"/"} className="logo" >
-                                <img src={logo} alt="Matias Donato "/>
+                                <img src={ mode === "dark" ? darkLogo : lightLogo} alt="Matias Donato "/>
                             </Link>
                         </div>
                     
@@ -101,19 +102,19 @@ export default function Nav(){
                             <SvgClose className="navClose" onClick={() => toggleSideNav()}/>
                             <div className="buttonsContainer">
                                 <Link to={"/"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn"><SvgHome className="navIcons"/> <p>Home</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={` ${location === "/" && "navLinkAnimated"} sideNavLink animate__animated animate__bounceIn`}><SvgHome className="navIcons"/> <p>Home</p> </div >
                                 </Link>
                                 <Link to={"/about"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link1"><SvgUser className="navIcons" /> <p>About Me</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={` ${location === "/about" && "navLinkAnimated"} sideNavLink animate__animated animate__bounceIn link1`}><SvgUser className="navIcons" /> <p>About Me</p> </div >
                                 </Link>
                                 <Link to={"/skills"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link2"><SvgSkills className="navIcons" /> <p>Skills</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={` ${location === "/skills" && "navLinkAnimated"} sideNavLink animate__animated animate__bounceIn link2`}><SvgSkills className="navIcons" /> <p>Skills</p> </div >
                                 </Link>
                                 <Link to={"/projects"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link3"><SvgPortfolio className="navIcons" /> <p>Portfolio</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={` ${location === "/projects" && "navLinkAnimated"} sideNavLink animate__animated animate__bounceIn link3`}><SvgPortfolio className="navIcons" /> <p>Portfolio</p> </div >
                                 </Link>
                                 <Link to={"/contact"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contact Me</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={` ${location === "/contact" && "navLinkAnimated"} sideNavLink animate__animated animate__bounceIn link4`}><SvgContact className={"navIcons"} /> <p>Contact Me</p> </div >
                                 </Link>
                                 <div className="switchersBoxOnPhone animate__animated animate__bounceIn">
                                     <div className="switcherContainer">
@@ -143,19 +144,19 @@ export default function Nav(){
                 <div className="bigNavContainer">
                     <div className="navContainer ">
                         <Link className="buttonLink" to={"/"}>
-                            <div className="navLink animate__animated animate__bounceIn"><SvgHome className="navIcons"/> <p>Inicio</p></div>
+                            <div className={`navLink ${location === "/" && "navLinkAnimated"} animate__animated animate__bounceIn`}><SvgHome className="navIcons"/> <p>Inicio</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/about"}>
-                            <div className="navLink animate__animated animate__bounceIn link1"><SvgUser className="navIcons"/> <p>Sobre Mi</p></div>
+                            <div className={`navLink ${location === "/about" && "navLinkAnimated"} animate__animated animate__bounceIn link1`}><SvgUser className="navIcons"/> <p>Sobre Mi</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/skills"}>
-                            <div className="navLink animate__animated animate__bounceIn link2"><SvgSkills className="navIcons" /> <p>Conocimientos</p></div>
+                            <div className={`navLink ${location === "/skills" && "navLinkAnimated"} animate__animated animate__bounceIn link2`}><SvgSkills className="navIcons" /> <p>Conocimientos</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/projects"}>
-                            <div className="navLink animate__animated animate__bounceIn link3"><SvgPortfolio className="navIcons" /> <p>Portafolio</p></div>
+                            <div className={`navLink ${location === "/projects" && "navLinkAnimated"} animate__animated animate__bounceIn link3`}><SvgPortfolio className="navIcons" /> <p>Portafolio</p></div>
                         </Link>
                         <Link className="buttonLink" to={"/contact"}>
-                            <div className="navLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contactame</p></div>
+                            <div className={`navLink ${location === "/contact" && "navLinkAnimated"} animate__animated animate__bounceIn link4`}><SvgContact className={"navIcons"} /> <p>Contactame</p></div>
                         </Link>
                         <div className="switchersBox animate__animated animate__bounceIn">
                             <div className="switcherContainer">
@@ -177,7 +178,7 @@ export default function Nav(){
                     
                     <div className="logo animate__animated animate__backInDown">
                         <Link to={"/"} className="logo" >
-                            <img src={logo} alt="Matias Donato "/>
+                            <img src={ mode === "dark" ? darkLogo : lightLogo} alt="Matias Donato "/>
                         </Link>
                     </div>
                     
@@ -188,19 +189,19 @@ export default function Nav(){
                             <SvgClose className="navClose" onClick={() => toggleSideNav()}/>
                             <div className="buttonsContainer">
                                 <Link to={"/"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn"><SvgHome className="navIcons"/> <p>Inicio</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={`sideNavLink animate__animated animate__bounceIn ${location === "/" && "navLinkAnimated"} `}><SvgHome className="navIcons"/> <p>Inicio</p> </div >
                                 </Link>
                                 <Link to={"/about"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link1"><SvgUser className="navIcons" /> <p>Sobre Mi</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={`sideNavLink animate__animated animate__bounceIn link1 ${location === "/about" && "navLinkAnimated"} `}><SvgUser className="navIcons" /> <p>Sobre Mi</p> </div >
                                 </Link>
                                 <Link to={"/skills"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link2"><SvgSkills className="navIcons" /> <p>Conocimientos</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={`sideNavLink animate__animated animate__bounceIn link2 ${location === "/skills" && "navLinkAnimated"} `}><SvgSkills className="navIcons" /> <p>Conocimientos</p> </div >
                                 </Link>
                                 <Link to={"/projects"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link3"><SvgPortfolio className="navIcons" /> <p>Portafolio</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={`sideNavLink animate__animated animate__bounceIn link3 ${location === "/projects" && "navLinkAnimated"} `}><SvgPortfolio className="navIcons" /> <p>Portafolio</p> </div >
                                 </Link>
                                 <Link to={"/contact"}>
-                                    <div onClick={() => toggleSideNav()} className="sideNavLink animate__animated animate__bounceIn link4"><SvgContact className={"navIcons"} /> <p>Contactame</p> </div >
+                                    <div onClick={() => toggleSideNav()} className={`sideNavLink animate__animated animate__bounceIn link4 ${location === "/contact" && "navLinkAnimated"} `}><SvgContact className={"navIcons"} /> <p>Contactame</p> </div >
                                 </Link>
                                 <div className="switchersBoxOnPhone animate__animated animate__bounceIn">
                                     <div className="switcherContainer">

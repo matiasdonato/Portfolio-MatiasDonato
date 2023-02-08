@@ -137,13 +137,13 @@
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-    transform: translateY(-64px);
+    transform: translateY(-56px);
     font-size: 0.75rem;
 }
 
 .inputBox textarea:valid~span,
 .inputBox textarea:focus~span {
-    transform: translateY(-256px);
+    transform: translateY(-242px);
     font-size: 0.75rem;
 }
 

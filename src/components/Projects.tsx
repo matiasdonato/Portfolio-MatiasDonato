@@ -6,15 +6,30 @@ import blackCloverTattooImage from "../assets/images/BlackCloverTattoo.png"
 import SvgInfo from "../assets/icons/svgInfo"
 import SvgOpenWindow from "../assets/icons/svgOpenWindow"
 import SvgGitHub from "../assets/icons/svgGitHub"
+import { useSelector } from "react-redux"
+
 
 
 export default function Projects(){
+
+  interface AppState{
+    lenguage : string
+  }
+  
+  let {lenguage} = useSelector((state: AppState) => state)
+
     return (
       <div className="bigPortfolioContainer" >
+        {lenguage === "english" ? 
         <div className="portfolioTextContainer animate__animated animate__fadeInLeft" >
           <h2>Portfolio</h2>
           <p>My Projects:</p>
-        </div>
+        </div> : 
+        <div className="portfolioTextContainer animate__animated animate__fadeInLeft" >
+          <h2>Portafolio</h2>
+          <p>Mis Projectos:</p>
+        </div>}
+        
         <div className="portfolioContainerPositionBox animate__animated animate__fadeInRight">
           <div className="portfolioContainer">
               <div className="projectContainer">               

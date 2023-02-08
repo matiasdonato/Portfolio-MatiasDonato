@@ -118,6 +118,7 @@
     .photo {
         height: auto;
         min-width: 270px;
+        max-width: 270px;
         width: 94%;
         margin-top: 0;
         margin-bottom: 0;
