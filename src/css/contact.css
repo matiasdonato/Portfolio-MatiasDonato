@@ -6,11 +6,24 @@
     height: 100%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .blurBg {
     filter: blur(10px);
     pointer-events: none;
+}
+
+.contactTextContainer {
+    width: 100%;
+    margin-left: 8vh;
 }
 
 .contactTextContainer h2 {
@@ -236,7 +249,6 @@
 @media screen and (min-width: 1024px) {
     .bigContactContainer {
         align-items: flex-start;
-        padding-left: 6vh;
     }
     .contactContainer {
         margin-top: 2vh;

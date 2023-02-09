@@ -69,6 +69,7 @@ export default function Nav(){
                         <Link className="buttonLink" to={"/contact"}>
                             <div className={`${location === "/contact" && "navLinkAnimated"}  navLink animate__animated animate__bounceIn link4`}><SvgContact className={"navIcons"} /> <p>Contact Me</p></div>
                         </Link>
+                        
                         <div className="switchersBox animate__animated animate__bounceIn">
                             <div className="switcherContainer">
                                 <p className="switcherText">ESP</p>
@@ -87,12 +88,13 @@ export default function Nav(){
                         </div>
                     </div>
                     
-                    
-                        <div className="logo animate__animated animate__backInDown">
-                            <Link to={"/"} className="logo" >
-                                <img src={ mode === "dark" ? darkLogo : lightLogo} alt="Matias Donato "/>
-                            </Link>
-                        </div>
+                    <div className="logo animate__animated animate__backInDown">
+                        <Link to={"/"} className="logo" >
+                            <img src={ mode === "dark" ? darkLogo : lightLogo} alt="Matias Donato "/>
+                        </Link>
+                    </div>
+
+                        
                     
                     
                     <div className={`bigSideNavContainer ${sideNavHeight}`}>
