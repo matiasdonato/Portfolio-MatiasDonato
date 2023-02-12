@@ -25,6 +25,7 @@ import Scrum from "../assets/images/scrum.png"
 import SEO from "../assets/images/SEO.png"
 import SQLite from "../assets/images/sqlite.png"
 import Postman from "../assets/images/postman.png"
+import Jest from "../assets/images/jest.png"
 
 
 
@@ -107,6 +108,10 @@ export default function Skills(){
           <a href="https://sass-lang.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={SASS} alt="HTML Logo" className="skillsIcons" />
             <p>SASS</p>
+          </a>
+          <a href="https://www.prisma.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={Jest} alt="HTML Logo" className="skillsIcons" />
+            <p>Jest</p>
           </a>
           <a href="https://git-scm.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Git} alt="HTML Logo" className="skillsIcons" />
