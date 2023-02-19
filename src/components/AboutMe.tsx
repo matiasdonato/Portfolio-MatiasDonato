@@ -81,7 +81,7 @@ export default function AboutMe(){
           <div className="educationAndExperienceContainer">
             <div className="bigAboutInfoContainer">
               <div className="aboutInfoContainer animate__animated animate__fadeInLeft">
-                <h5>Experience</h5>
+                <h5>Recent Experience</h5>
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
                   <div>
@@ -224,7 +224,7 @@ export default function AboutMe(){
           <div className="educationAndExperienceContainer">
             <div className="bigAboutInfoContainer">
               <div className="aboutInfoContainer animate__animated animate__fadeInLeft">
-                <h5>Experiencia</h5>
+                <h5>Experiencia Reciente</h5>
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
                   <div>
@@ -232,7 +232,7 @@ export default function AboutMe(){
                       <div className="infoTitle">
                         <div className="aboutPoint" />
                         <h6 className="infoTitleName">Dogs App</h6>
-                        <h6 className="infoTitleDate">Sept. 19 del 2022 - Oct. 10 del 2022</h6>
+                        <h6 className="infoTitleDate">Sept. 1 del 2022 - Oct. 10 del 2022</h6>
                       </div>
                       <p>Diseñar y desarrollar una App de perros que incluía: búsquedas, filtrados, ordenamientos y creación con subida de imágenes.</p>
                     </div>
@@ -240,7 +240,7 @@ export default function AboutMe(){
                       <div className="infoTitle">
                         <div className="aboutPoint" />
                         <h6 className="infoTitleName">NFTRADE</h6>
-                        <h6 className="infoTitleDate">Oct. 17 del 2022 - Nov. 17 del 2022</h6>
+                        <h6 className="infoTitleDate">Oct. 17 del 2022 - Dic. 30 del 2022</h6>
                       </div>
                       <p>Diseño y desarrollo de un mercado en línea de NFT´s, el cual incluye: Login (Auth de terceros y creación de perfiles de usuario), Pasarela de pagos, Busquedas, Filtrados por rangos de precios, Ordenamientos (Por precio o nombre), Creación y publicación de productos (NFT´s), Subida de imagenes, Notificaciones, Envío de mails, Borrado lógico, Uso del local storage, Reviews, Dashboard y Admin-Dashboard.</p>
                     </div>

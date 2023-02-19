@@ -26,6 +26,8 @@ import SEO from "../assets/images/SEO.png"
 import SQLite from "../assets/images/sqlite.png"
 import Postman from "../assets/images/postman.png"
 import Jest from "../assets/images/jest.png"
+import angular from "../assets/images/Angular.png"
+import vue from "../assets/images/Vue.png"
 
 
 
@@ -56,6 +58,14 @@ export default function Skills(){
           <a href="https://reactjs.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={React} alt="HTML Logo" className="skillsIcons" />
             <p>React</p>
+          </a>
+          <a href="https://reactjs.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={angular} alt="HTML Logo" className="skillsIcons" />
+            <p>Angular</p>
+          </a>
+          <a href="https://reactjs.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={vue} alt="HTML Logo" className="skillsIcons" />
+            <p>Vue</p>
           </a>
           <a href="https://redux.js.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Redux} alt="HTML Logo" className="skillsIcons" />
@@ -124,10 +134,6 @@ export default function Skills(){
           <a href="https://www.figma.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Figma} alt="HTML Logo" className="skillsIcons" />
             <p>Figma</p>
-          </a>
-          <a href="https://balsamiq.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={Balsamiq} alt="HTML Logo" className="skillsIcons" />
-            <p>Balsamiq</p>
           </a>
           <a href="https://www.scrum.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Scrum} alt="HTML Logo" className="skillsIcons" />
