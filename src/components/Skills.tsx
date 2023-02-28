@@ -28,6 +28,9 @@ import Postman from "../assets/images/postman.png"
 import Jest from "../assets/images/jest.png"
 import angular from "../assets/images/Angular.png"
 import vue from "../assets/images/Vue.png"
+import mongodb from "../assets/images/mongodb.png"
+import graphql from "../assets/images/graphql.svg.png"
+import colyseus from "../assets/images/colyseus.png"
 
 
 
@@ -87,6 +90,14 @@ export default function Skills(){
             <img src={Express} alt="HTML Logo" className="skillsIcons" />
             <p>Express</p>
           </a>
+          <a href="https://graphql.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={graphql} alt="HTML Logo" className="skillsIcons" />
+            <p>GraphQL</p>
+          </a>
+          <a href="https://www.colyseus.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={colyseus} alt="HTML Logo" className="skillsIcons" />
+            <p>Colyseus</p>
+          </a>
           <a href="https://sequelize.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Sequelize} alt="HTML Logo" className="skillsIcons" />
             <p>Sequelize</p>
@@ -98,6 +109,10 @@ export default function Skills(){
           <a href="https://www.mysql.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={MySQl} alt="HTML Logo" className="skillsIcons" />
             <p>MySQl</p>
+          </a>
+          <a href="https://www.mongodb.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={mongodb} alt="HTML Logo" className="skillsIcons" />
+            <p>MongoDB</p>
           </a>
           <a href="https://sqlite.org/index.html" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={SQLite} alt="HTML Logo" className="skillsIcons" />
