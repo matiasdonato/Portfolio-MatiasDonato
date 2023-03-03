@@ -202,10 +202,6 @@
     }
     .bigAboutInfoContainer {
         width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
         height: 100%;
     }
     .aboutInfoContainer {
@@ -220,11 +216,9 @@
 
 @media screen and (min-width: 1300px) {
     .aboutInfoContainer {
-        width: 44%;
-        height: 510px;
+        width: 94.5%;
     }
     .aboutLenguageContainer {
-        width: 82.8%;
         margin-top: 0vh;
     }
     .bigAboutInfoContainer {
@@ -235,16 +229,9 @@
     }
 }
 
-@media screen and (min-width: 1406px) {
-    .aboutInfoContainer {
-        height: 440px;
-    }
-}
+@media screen and (min-width: 1406px) {}
 
 @media screen and (min-width: 1504px) {
-    .aboutInfoContainer {
-        height: 420px;
-    }
     .bigAboutInfoContainer {
         justify-content: space-evenly;
     }
@@ -254,13 +241,7 @@
 }
 
 @media screen and (min-width: 1800px) {
-    .aboutInfoContainer {
-        width: 44%;
-    }
     .aboutLinks {
         margin-right: 100px;
-    }
-    .aboutLenguageContainer {
-        width: 84.7%;
     }
 }

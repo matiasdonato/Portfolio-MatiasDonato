@@ -88,10 +88,10 @@ export default function AboutMe(){
                     <div className="aboutInfo">
                       <div className="infoTitle">
                         <div className="aboutPoint" />
-                        <h6 className="infoTitleName">Dogs App</h6>
-                        <h6 className="infoTitleDate">Sept. 19 of 2022 - Oct. 10 of 2022</h6>
+                        <h6 className="infoTitleName">ALTER-LEARNING EDUCATIONAL PLATFORM, INC.</h6>
+                        <h6 className="infoTitleDate">Jan. 25 of 2023 - Today</h6>
                       </div>
-                      <p>Design and develop a dog app that included searches, filtering, ordering, and creation with uploading of images</p>
+                      <p>As a Full Stack Developer I am responsible for developing applications that offer interactive and engaging educational experiences for the future. Our platform is a leading e-learning provider, and my role involves using a range of cutting-edge technologies, including React, Typescript, Node, Express, GraphQL, MySQL, MongoDB, Colyseus, and other tools. By leveraging these tools and my expertise, I aim to create innovative and seamless user experiences for our platform's users</p>
                     </div>
                     <div className="aboutInfo">
                       <div className="infoTitle">
@@ -100,6 +100,14 @@ export default function AboutMe(){
                         <h6 className="infoTitleDate">Oct. 17 of 2022 - Nov. 17 of 2022</h6>
                       </div>
                       <p>Design and develop an online market for NFTs that included: login (third-party Auth and user profile creation), payment gateway, searches, filtering by price ranges, sorting (by price or name), creation and publication of products (NFT´s), uploading of images, notifications, email sending, logical delete, use of local storage, reviews, a dashboard, and an admin dashboard.</p>
+                    </div>
+                    <div className="aboutInfo">
+                      <div className="infoTitle">
+                        <div className="aboutPoint" />
+                        <h6 className="infoTitleName">Dogs App</h6>
+                        <h6 className="infoTitleDate">Sept. 19 of 2022 - Oct. 10 of 2022</h6>
+                      </div>
+                      <p>Design and develop a dog app that included searches, filtering, ordering, and creation with uploading of images</p>
                     </div>
                   </div>
                 </div>
