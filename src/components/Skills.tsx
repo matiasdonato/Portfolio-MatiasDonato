@@ -31,6 +31,7 @@ import vue from "../assets/images/Vue.png"
 import mongodb from "../assets/images/mongodb.png"
 import graphql from "../assets/images/graphql.svg.png"
 import colyseus from "../assets/images/colyseus.png"
+import Java from "../assets/images/java.png"
 
 
 
@@ -53,6 +54,10 @@ export default function Skills(){
           <a href="https://www.javascript.com/about" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={JS} alt="HTML Logo" className="skillsIcons" />
             <p>JavaScript</p>
+          </a>
+          <a href="https://www.javascript.com/about" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={Java} alt="HTML Logo" className="skillsIcons" />
+            <p>Java</p>
           </a>
           <a href="https://www.typescriptlang.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={TS} alt="HTML Logo" className="skillsIcons" />
