@@ -89,7 +89,7 @@ export default function AboutMe(){
                       <div className="infoTitle">
                         <div className="aboutPoint" />
                         <h6 className="infoTitleName">ALTER-LEARNING EDUCATIONAL PLATFORM, INC.</h6>
-                        <h6 className="infoTitleDate">Jan. 25 of 2021 - Today</h6>
+                        <h6 className="infoTitleDate">Jan. 25 of 2021 - present</h6>
                       </div>
                       <p>As a Full Stack Developer I am responsible for developing applications that offer interactive and engaging educational experiences for the future. Our platform is a leading e-learning provider, and my role involves using a range of cutting-edge technologies, including React, Typescript, Node, Express, GraphQL, MySQL, MongoDB, Colyseus, and other tools. By leveraging these tools and my expertise, I aim to create innovative and seamless user experiences for our platform's users. <a href="https://alter-learning.com" target="_blank" rel="noreferrer" className="yellow">Web Page Link</a></p>
                     </div>
@@ -117,6 +117,14 @@ export default function AboutMe(){
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
                   <div>
+                    <div className="aboutInfo">
+                      <div className="infoTitle">
+                        <div className="aboutPoint" />
+                        <h6 className="infoTitleName">March 2021 - present</h6>
+                        <h6 className="infoTitleDate">Jul. 18 of 2022 - Nov. 18 of 2022</h6>
+                      </div>
+                      <p>I am currently in my second year of the Computer Science degree at the Faculty of Exact Sciences at UBA (University of Buenos Aires)</p>
+                    </div>
                     <div className="aboutInfo">
                       <div className="infoTitle">
                         <div className="aboutPoint" />
@@ -268,6 +276,14 @@ export default function AboutMe(){
                 <div className="aboutLineAndInfo">
                   <hr className="aboutInfoLine" />
                   <div>
+                    <div className="aboutInfo">
+                      <div className="infoTitle">
+                        <div className="aboutPoint" />
+                        <h6 className="infoTitleName">Licenciatura en Ciencias de la Computación</h6>
+                        <h6 className="infoTitleDate">Marzo del 2021 - hoy</h6>
+                      </div>
+                      <p>Actualmente me encuentro cursando el segundo año de la carrera Ciencias de la Computación en la Facultad de Ciencias Exactas de la UBA (Universidad de Buenos Aires)</p>
+                    </div>
                     <div className="aboutInfo">
                       <div className="infoTitle">
                         <div className="aboutPoint" />
