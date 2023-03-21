@@ -120,8 +120,8 @@ export default function AboutMe(){
                     <div className="aboutInfo">
                       <div className="infoTitle">
                         <div className="aboutPoint" />
-                        <h6 className="infoTitleName">March 2021 - present</h6>
-                        <h6 className="infoTitleDate">Jul. 18 of 2022 - Nov. 18 of 2022</h6>
+                        <h6 className="infoTitleName">Bachelor of Computer Science</h6>
+                        <h6 className="infoTitleDate">March 2021 - present</h6>
                       </div>
                       <p>I am currently in my second year of the Computer Science degree at the Faculty of Exact Sciences at UBA (University of Buenos Aires)</p>
                     </div>
