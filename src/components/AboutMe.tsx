@@ -89,7 +89,7 @@ export default function AboutMe(){
                       <div className="infoTitle">
                         <div className="aboutPoint" />
                         <h6 className="infoTitleName">ALTER-LEARNING EDUCATIONAL PLATFORM, INC.</h6>
-                        <h6 className="infoTitleDate">Jan. 25 of 2021 - present</h6>
+                        <h6 className="infoTitleDate">Sept. 25 of 2021 - present</h6>
                       </div>
                       <p>As a Full Stack Developer I am responsible for developing applications that offer interactive and engaging educational experiences for the future. Our platform is a leading e-learning provider, and my role involves using a range of cutting-edge technologies, including React, Typescript, Node, Express, GraphQL, MySQL, MongoDB, Colyseus, and other tools. By leveraging these tools and my expertise, I aim to create innovative and seamless user experiences for our platform's users. <a href="https://alter-learning.com" target="_blank" rel="noreferrer" className="yellow">Web Page Link</a></p>
                     </div>
@@ -248,7 +248,7 @@ export default function AboutMe(){
                       <div className="infoTitle">
                         <div className="aboutPoint" />
                         <h6 className="infoTitleName">ALTER-LEARNING EDUCATIONAL PLATFORM, INC.</h6>
-                        <h6 className="infoTitleDate">Enero 25 del 2021 - Hoy</h6>
+                        <h6 className="infoTitleDate">Sept. 25 del 2021 - Hoy</h6>
                       </div>
                       <p>Como desarrollador Full Stack, soy responsable de desarrollar aplicaciones que ofrezcan experiencias educativas interactivas y atractivas para el futuro. Nuestra plataforma es un proveedor líder de e-learning, y mi papel implica el uso de una variedad de tecnologías modernas, incluyendo React, Typescript, Node, Express, GraphQL, MySQL, MongoDB, Colyseus, entre otras. Al aprovechar estas herramientas y mi experiencia, mi objetivo es crear experiencias de usuario innovadoras y sin problemas para los usuarios de nuestra plataforma. <a href="https://alter-learning.com" target="_blank" rel="noreferrer" className="yellow">Link a la Pagina Web</a></p>
                     </div>
