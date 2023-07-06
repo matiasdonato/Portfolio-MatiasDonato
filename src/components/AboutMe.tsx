@@ -32,7 +32,7 @@ export default function AboutMe(){
           <div className="descriptionContainer animate__animated animate__fadeInUp">
             <h5>{"<Matias Donato />"} <b className="yellow">{"<Full Stack Web Developer/>"}</b></h5>
             <p>
-              Hi! My name is Matias Donato and I am a passionate Full Stack Developer from Argentina. I have experience working with JavaScript, TypeScript, NodeJS, Express, React, Redux, Next.js and SQL, among other technologies of the same nature. I can code a website from the ground up, Front or Back, including the database. I consider myself a proactive and creative individual with a positive attitude, strong organizational skills, a dynamic teamwork style, and strong problem-solving abilities. I also have a good handle of Git Flow, a wide capacity for learning, and a good level of english.</p>
+              Hi! My name is Matias and I am a passionate Full Stack Developer from Argentina. I have over 2 years of work experience in web application development using technologies such as JavaScript, TypeScript, React, Angular, NodeJS, Express, REST APIs, Redux, SQL, and MongoDB, among others. I can code a website from the ground up, Front or Back, including the database. I consider myself a proactive and creative individual with a positive attitude, strong organizational skills, a dynamic teamwork style, and strong problem-solving abilities. I also have a good handle of Git Flow, a wide capacity for learning, and a good level of english.</p>
           </div>
           <div className="aboutLinksContainer animate__animated animate__fadeInUp">
             <div className="aboutLinks">
@@ -199,7 +199,7 @@ export default function AboutMe(){
           <div className="descriptionContainer animate__animated animate__fadeInUp">
             <h5>{"<Matias Donato />"} <b className="yellow">{"<Full Stack Web Developer/>"}</b></h5>
             <p>
-              Hola mi nombre es Matias Donato, soy un apasionado Full Stack Developer de Argentina. tengo experiencia trabajando con JavaScript, TypeScript, NodeJS, Express, React, Redux, Next.js y SQL, entre otras tecnologias del sector. Soy capaz de codear páginas web desde 0 tanto en Front cómo Back incluyendo la DB. Me considero una persona proactiva, creativa, con buena predisposición, grandes capacidades de organización y trabajo en equipo, buen manejo del Git Flow, resolución de problemas, amplia capacidad de aprendizaje y buen nivel de inglés.</p>
+              Hola! Mi nombre es Matias, soy un apasionado Full Stack Developer de Argentina. Cuento con mas de 2 años de experiencia laboral trabajando en el desarrollo de aplicaciones web con tecnologías como JavaScript, TypeScript, React, Angular, NodeJS, Express, API REST, Redux, SQL y MongoDB, entre otras. Soy capaz de codear páginas web desde 0 tanto en Front cómo Back incluyendo la DB. Me considero una persona proactiva, creativa, con buena predisposición, grandes capacidades de organización y trabajo en equipo, buen manejo del Git Flow, resolución de problemas, amplia capacidad de aprendizaje y buen nivel de inglés.</p>
           </div>
           <div className="aboutLinksContainer animate__animated animate__fadeInUp">
             <div className="aboutLinks">
