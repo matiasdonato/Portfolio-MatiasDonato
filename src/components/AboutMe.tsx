@@ -88,8 +88,16 @@ export default function AboutMe(){
                     <div className="aboutInfo">
                       <div className="infoTitle">
                         <div className="aboutPoint" />
+                        <h6 className="infoTitleName">IT Patagonia</h6>
+                        <h6 className="infoTitleDate">May 1 of 2023 - Present</h6>
+                      </div>
+                      <p>At IT Patagonia, I work on various projects hand in hand with different teams to develop modern web applications with dynamic and attractive interfaces using React and Angular, ensuring code security with TypeScript, and building scalable back-end systems with Express. To achieve this, we use a set of technologies that include React, Angular, Redux, TypeScript, Node.js, Express, Nest.js, and MySQL, among others. <a href="https://www.itpatagonia.com" target="_blank" rel="noreferrer" className="yellow">Web Page Link</a></p>
+                    </div>
+                    <div className="aboutInfo">
+                      <div className="infoTitle">
+                        <div className="aboutPoint" />
                         <h6 className="infoTitleName">ALTER-LEARNING EDUCATIONAL PLATFORM, INC.</h6>
-                        <h6 className="infoTitleDate">Sept. 25 of 2021 - present</h6>
+                        <h6 className="infoTitleDate">Sept. 25 of 2021 - April 1 of 2023</h6>
                       </div>
                       <p>As a Full Stack Developer I am responsible for developing applications that offer interactive and engaging educational experiences for the future. Our platform is a leading e-learning provider, and my role involves using a range of cutting-edge technologies, including React, Typescript, Node, Express, GraphQL, MySQL, MongoDB, Colyseus, and other tools. By leveraging these tools and my expertise, I aim to create innovative and seamless user experiences for our platform's users. <a href="https://alter-learning.com" target="_blank" rel="noreferrer" className="yellow">Web Page Link</a></p>
                     </div>
@@ -247,8 +255,16 @@ export default function AboutMe(){
                     <div className="aboutInfo">
                       <div className="infoTitle">
                         <div className="aboutPoint" />
+                        <h6 className="infoTitleName">IT Patagonia</h6>
+                        <h6 className="infoTitleDate">Mayo 1 del 2023 - Hoy</h6>
+                      </div>
+                      <p>En IT Patagonia, trabajo en diversos proyectos mano a mano con diferentes equipos para desarrollar aplicaciones web modernas con interfaces dinámicas y atractivas con React y Angular, garantizando la seguridad del código con TypeScript y construyendo sistemas backend escalables con Express. Para lograr esto, utilizamos un conjunto de tecnologías que incluyen React, Angular, Redux, TypeScript, Node.js, Express, Nest.js y MySQL, entre otras. <a href="https://www.itpatagonia.com" target="_blank" rel="noreferrer" className="yellow">Pagina Web</a></p>
+                    </div>
+                    <div className="aboutInfo">
+                      <div className="infoTitle">
+                        <div className="aboutPoint" />
                         <h6 className="infoTitleName">ALTER-LEARNING EDUCATIONAL PLATFORM, INC.</h6>
-                        <h6 className="infoTitleDate">Sept. 25 del 2021 - Hoy</h6>
+                        <h6 className="infoTitleDate">Sept. 25 del 2021 - Abril 1 del 2023</h6>
                       </div>
                       <p>Como desarrollador Full Stack, soy responsable de desarrollar aplicaciones que ofrezcan experiencias educativas interactivas y atractivas para el futuro. Nuestra plataforma es un proveedor líder de e-learning, y mi papel implica el uso de una variedad de tecnologías modernas, incluyendo React, Typescript, Node, Express, GraphQL, MySQL, MongoDB, Colyseus, entre otras. Al aprovechar estas herramientas y mi experiencia, mi objetivo es crear experiencias de usuario innovadoras y sin problemas para los usuarios de nuestra plataforma. <a href="https://alter-learning.com" target="_blank" rel="noreferrer" className="yellow">Link a la Pagina Web</a></p>
                     </div>

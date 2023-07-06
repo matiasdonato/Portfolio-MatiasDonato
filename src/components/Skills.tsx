@@ -9,6 +9,7 @@ import ReactNative from "../assets/images/ReactNative.jpg"
 import Next from "../assets/images/next.png"
 import Node from "../assets/images/node.png"
 import Express from "../assets/images/express.png"
+import Nest from "../assets/images/nest.png"
 import Postgre from "../assets/images/postgreSQL.png"
 import MySQl from "../assets/images/mysql.png"
 import Sequelize from "../assets/images/sequelize.png"
@@ -71,10 +72,6 @@ export default function Skills(){
             <img src={angular} alt="HTML Logo" className="skillsIcons" />
             <p>Angular</p>
           </a>
-          <a href="https://reactjs.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={vue} alt="HTML Logo" className="skillsIcons" />
-            <p>Vue</p>
-          </a>
           <a href="https://redux.js.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Redux} alt="HTML Logo" className="skillsIcons" />
             <p>Redux</p>
@@ -94,6 +91,10 @@ export default function Skills(){
           <a href="https://expressjs.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Express} alt="HTML Logo" className="skillsIcons" />
             <p>Express</p>
+          </a>
+          <a href="https://expressjs.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={Nest} alt="HTML Logo" className="skillsIcons" />
+            <p>NestJS</p>
           </a>
           <a href="https://graphql.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={graphql} alt="HTML Logo" className="skillsIcons" />

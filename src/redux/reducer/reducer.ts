@@ -1,5 +1,5 @@
 const initialState = {
-    lenguage : "english",
+    lenguage : "spanish",
     mode : "dark"
 }
 
