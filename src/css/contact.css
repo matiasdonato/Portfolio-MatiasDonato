@@ -89,8 +89,13 @@
     margin-top: 36px;
 }
 
+.errorTextContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .errorText {
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 0.85rem;
 }
 

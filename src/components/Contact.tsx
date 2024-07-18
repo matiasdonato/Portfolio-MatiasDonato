@@ -164,28 +164,36 @@ export default function Contact(){
                 <i></i>
                 <div className="borderInput"></div>
               </div>
-              {error.name && <p className="errorText">*{error.name}</p> }
+              <div className="errorTextContainer" >
+                {error.name && <p className="errorText">*{error.name}</p> }
+              </div>
               <div className="inputBox"> 
                 <input className="contactInput" autoComplete="off" maxLength={38} type="text" required={true} name="email" value={contactForm.email} onChange={(e) => handleInput(e) } />
                 <span>Mail</span>
                 <i></i> 
                 <div className="borderInput"></div>
               </div>
-              {error.email && <p className="errorText" >*{error.email}</p>}
+              <div className="errorTextContainer" >
+                {error.email && <p className="errorText" >*{error.email}</p>}
+              </div>
               <div className="inputBox"> 
                 <input className="contactInput" autoComplete="off" maxLength={34} type="text" required={true} name="subject" value={contactForm.subject} onChange={(e) => handleInput(e) } />
                 <span>Subject</span>
                 <i></i>
                 <div className="borderInput"></div>
               </div>
-              {error.subject && <p className="errorText" >*{error.subject}</p>}
+              <div className="errorTextContainer" >
+                {error.subject && <p className="errorText" >*{error.subject}</p>}
+              </div>
               <div className="inputBox"> 
                 <textarea className="contactInput" name="body" required={true} value={contactForm.body} cols={30} rows={10} onChange={(e) => handleInput(e) } maxLength={600} ></textarea>
                 <span>Message</span> 
                 <i></i>
                 <div className="borderTextarea"></div>
               </div>
-              {error.body && <p className="errorText" >*{error.body}</p>}
+              <div className="errorTextContainer" >
+                {error.body && <p className="errorText" >*{error.body}</p>}
+              </div>
               <div className="submitContactContainer">
                 {emailLoading === false ? <input type="submit" className="submitButton" value={"Submit"} disabled={ error.name !== null || error.email !== null || error.subject !== null || error.body !== null} /> : <div className="loadingContainer" > <img className="loadingSubmit" src={loadingGif} alt="loading" /> </div> }        
               </div>
@@ -233,28 +241,36 @@ export default function Contact(){
                 <i></i>
                 <div className="borderInput"></div>
               </div>
-              {error.name && <p className="errorText">*{error.name}</p> }
+              <div className="errorTextContainer" >
+                {error.name && <p className="errorText">*{error.name}</p> }
+              </div>
               <div className="inputBox"> 
                 <input className="contactInput" autoComplete="off" maxLength={38} type="text" required={true} name="email" value={contactForm.email} onChange={(e) => handleInput(e) } />
                 <span>Mail</span>
                 <i></i> 
                 <div className="borderInput"></div>
               </div>
-              {error.email && <p className="errorText" >*{error.email}</p>}
+              <div className="errorTextContainer" >
+                {error.email && <p className="errorText" >*{error.email}</p>}
+              </div>
               <div className="inputBox"> 
                 <input className="contactInput" autoComplete="off" maxLength={34} type="text" required={true} name="subject" value={contactForm.subject} onChange={(e) => handleInput(e) } />
                 <span>Asunto</span>
                 <i></i>
                 <div className="borderInput"></div>
               </div>
-              {error.subject && <p className="errorText" >*{error.subject}</p>}
+              <div className="errorTextContainer" >
+                {error.subject && <p className="errorText" >*{error.subject}</p>}
+              </div>
               <div className="inputBox"> 
                 <textarea className="contactInput" name="body" required={true} value={contactForm.body} cols={30} rows={10} onChange={(e) => handleInput(e) } maxLength={600} ></textarea>
                 <span>Mensaje</span> 
                 <i></i>
                 <div className="borderTextarea"></div>
               </div>
-              {error.body && <p className="errorText" >*{error.body}</p>}
+              <div className="errorTextContainer" >
+                {error.body && <p className="errorText" >*{error.body}</p>}
+              </div>
               <div className="submitContactContainer">
                 {emailLoading === false ? <input type="submit" className="submitButton" value={"Enviar"} disabled={ error.name !== null || error.email !== null || error.subject !== null || error.body !== null} /> : <div className="loadingContainer" > <img className="loadingSubmit" src={loadingGif} alt="loading" /> </div> }        
               </div>
