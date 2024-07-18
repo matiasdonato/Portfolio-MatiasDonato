@@ -106,7 +106,7 @@ export default function Projects(){
                           <SvgOpenWindow className="projectInfoIcon" />
                         </div>
                       </a>
-                      <a href="https://www.linkedin.com/in/matías-donato-227488224/details/projects/" target={"_blank"} rel="noreferrer">
+                      <a href="https://www.linkedin.com/in/matias-donato-291579316/details/projects/" target={"_blank"} rel="noreferrer">
                         <div className="projectLinkContainer">
                           <p>Info</p>
                           <SvgInfo className="projectInfoIcon" />
@@ -136,7 +136,7 @@ export default function Projects(){
                           <SvgOpenWindow className="projectInfoIcon" />
                         </div>
                       </a>
-                      <a href="https://www.linkedin.com/in/matías-donato-227488224/details/projects/" target={"_blank"} rel="noreferrer">
+                      <a href="https://www.linkedin.com/in/matias-donato-291579316/details/projects/" target={"_blank"} rel="noreferrer">
                         <div className="projectLinkContainer">
                           <p>Info</p>
                           <SvgInfo className="projectInfoIcon" />

@@ -35,7 +35,7 @@ export default function Home(){
               <div className="bigProfileIconsContainer">
                 <div>
                   {/* <p>I am a Web Developer from Argentina, experienced with React, Redux, Node.js, Express, PostgreSQL,  Sequelize, Next.js, Tailwind, and more techs from the same nature</p>  */}
-                  <a href="https://www.linkedin.com/in/matías-donato-227488224/" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/matias-donato-291579316/" target="_blank" rel="noreferrer">
                     <div className="profileIconsContainer">
                       <SvgLinkedin className="profileIcons" />
                     </div>
@@ -77,7 +77,7 @@ export default function Home(){
               <div className="bigProfileIconsContainer">
                 <div>
                   {/* <p>I am a Web Developer from Argentina, experienced with React, Redux, Node.js, Express, PostgreSQL,  Sequelize, Next.js, Tailwind, and more techs from the same nature</p>  */}
-                  <a href="https://www.linkedin.com/in/matías-donato-227488224/" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/matias-donato-291579316/" target="_blank" rel="noreferrer">
                     <div className="profileIconsContainer">
                       <SvgLinkedin className="profileIcons" />
                     </div>
