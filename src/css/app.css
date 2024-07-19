@@ -2,6 +2,7 @@
     --background-color: #111111;
     --primary-color-1: #1C1C1C;
     --primary-color-2: #303339;
+    --primary-color-3: #303339c2;
     --secondary-color: #26282c;
     --contrast-color: #ddca1e;
     --shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.86);
@@ -21,6 +22,7 @@
     --background-color: #C0C5CD;
     --primary-color-1: #C0C5CD;
     --primary-color-2: #abafb6;
+    --primary-color-3: #abafb6c2;
     --secondary-color: #adb5bd;
     --contrast-color: #3E588F;
     --shadow: 0px 0px 9px 4px rgba(151, 151, 151, 0.86);
@@ -255,12 +257,6 @@ body {
     box-shadow: var(--shadow);
 }
 
-.portfolioContainer {
-    box-shadow: var(--shadow);
-    background-color: var(--primary-color-1);
-    transition: all 0.5s;
-}
-
 .projectContainer {
     box-shadow: var(--shadow);
 }
@@ -276,13 +272,19 @@ body {
     transition: all 0.5s;
 }
 
+.githubModalInfo {
+    background-color: var(--primary-color-3);
+    transition: all 0.5s;
+    box-shadow: var(--shadow)
+}
+
 .projectInfoIcon {
     fill: var(--text-and-lines);
     transition: all 0.5s;
 }
 
 .projectLinkContainer {
-    box-shadow: var(--shadow);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.86);;
 }
 
 .projectLinkContainer:hover {

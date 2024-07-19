@@ -142,13 +142,13 @@ export default function Contact(){
             <div className="contactMeIconsContainer animate__animated animate__fadeInDown" >
               <div className="contactMeIcon">
                 <SvgMail className= "contactMeIconSvg" />
-                <span>matiasdonato14@gmail.com</span>
+                <span>matiasdonatoit@gmail.com</span>
               </div>
               <div className="contactMeIcon">
                 <SvgPhone className= "contactMeIconSvg" />
                 <span>+54 9 11 6209-1233</span>
               </div>
-              <a href="https://www.linkedin.com/in/matías-donato-227488224/" target={"_blank"} rel="noreferrer" className="contactMeIcon" >
+              <a href="https://www.linkedin.com/in/matias-donato-291579316/" target={"_blank"} rel="noreferrer" className="contactMeIcon" >
                 <SvgLinkedin className= "contactMeIconSvg" />
                 <span>Matias Donato</span>
               </a>
@@ -219,13 +219,13 @@ export default function Contact(){
             <div className="contactMeIconsContainer animate__animated animate__fadeInDown" >
               <div className="contactMeIcon">
                 <SvgMail className= "contactMeIconSvg" />
-                <span>matiasdonato14@gmail.com</span>
+                <span>matiasdonatoit@gmail.com</span>
               </div>
               <div className="contactMeIcon">
                 <SvgPhone className= "contactMeIconSvg" />
                 <span>+54 9 11 6209-1233</span>
               </div>
-              <a href="https://www.linkedin.com/in/matías-donato-227488224/" target={"_blank"} rel="noreferrer" className="contactMeIcon" >
+              <a href="https://www.linkedin.com/in/matias-donato-291579316/" target={"_blank"} rel="noreferrer" className="contactMeIcon" >
                 <SvgLinkedin className= "contactMeIconSvg" />
                 <span>Matias Donato</span>
               </a>

@@ -32,23 +32,21 @@
 }
 
 .portfolioContainer {
-    padding-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    padding: 2.5vh;
+    gap: 3.5vh;
     width: 88%;
-    border-radius: 15px;
     margin-bottom: 3vh;
 }
 
 .projectContainer {
-    width: 330px;
-    height: 260px;
+    width: 100%;
+    height: 31.5%;
+    min-height: 180px;
     position: relative;
-    border-radius: 22px;
+    border-radius: 10px;
     transition: all 0.5s;
     overflow: hidden;
 }
@@ -56,7 +54,7 @@
 .projectImage {
     width: 100%;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 8px 8px 0 0;
     transition: all 1s;
 }
 
@@ -76,7 +74,7 @@
     left: 0;
     width: 100%;
     height: 116px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 8px 8px;
     display: flex;
     align-items: center;
     transition: all 0.5s;
@@ -121,12 +119,59 @@
     justify-content: center;
     margin-right: 11px;
     transition: all 0.5s;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .projectLinkContainer p {
     margin-right: 5px;
     transition: all 0.5s;
+}
+
+.githubModalInfoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.githubModalInfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    width: 90%;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 2vh;
+}
+
+.githubModalInfo button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--text-and-lines);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.githubModalInfo button:hover{
+    color: var(--contrast-color);
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 811px) {
+    .projectContainer {
+        width: 45%;
+        height: 272px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -136,18 +181,13 @@
     }
     .portfolioContainerPositionBox {
         display: flex;
-        width: 96%;
+        width: 100%;
         justify-content: center;
         margin-top: 3vh;
     }
     .portfolioContainer {
         flex-wrap: wrap;
-        padding: 2vh;
-        padding-top: 28px;
-        padding-bottom: 28px;
-        width: fit-content;
-        max-width: 600px;
-        border-radius: 15px;
+        width: 100%;
     }
     .portfolioTextContainer h2 {
         font-size: 2.8rem;
@@ -160,7 +200,8 @@
         align-items: flex-start;
     }
     .projectContainer {
-        width: 550px;
+        width: 85%;
+        min-width: 520px;
         height: 390px;
     }
     .projectInfo {
@@ -175,8 +216,35 @@
     }
 }
 
-@media screen and (min-width: 1594px) {
-    .portfolioContainer {
-        max-width: 1170px;
+@media screen and (min-width: 1277px) {
+    .projectContainer {
+        width: 85%;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1479px) {
+    .projectContainer {
+        width: 47%;
+        height: 390px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .projectContainer {
+        height: 420px;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .projectContainer {
+        height: 442px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .projectContainer {
+        height: 466px;
     }
 }
