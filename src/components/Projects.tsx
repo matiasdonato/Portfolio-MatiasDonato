@@ -144,7 +144,7 @@ export default function Projects(){
                       <h3>Minerva</h3>
                     </div>
                     <div className="projectInfoContainer">
-                      <a href="https://black-clover-tattoo.netlify.app" target={"_blank"} rel="noreferrer">
+                      <a href="https://www.cervezaminerva.mx" target={"_blank"} rel="noreferrer">
                         <div className="projectLinkContainer">
                           <p>Deploy</p>
                           <SvgOpenWindow className="projectInfoIcon" />
