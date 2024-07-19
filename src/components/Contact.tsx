@@ -26,6 +26,11 @@ export default function Contact(){
 
   }
 
+  interface AppState{
+    lenguage : string
+  }
+  
+  let {lenguage} = useSelector((state: AppState) => state)
 
   function validate(form: ErrorObj){
     let error: ErrorObj = {
@@ -36,27 +41,27 @@ export default function Contact(){
     }
 
     if (!form.name) {
-      error.name = "Name missing"
-    }else if (form.name.length < 3) {
-      error.name = "The name must contain at least 3 characters."
+      error.name = lenguage === "english" ? "Name missing" : "Falta el nombre";
+    } else if (form.name.length < 3) {
+      error.name = lenguage === "english" ? "The name must contain at least 3 characters." : "El nombre debe contener al menos 3 caracteres.";
     }
 
     if (!form.email) {
-      error.email = "Email missing"
-    }else if (/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(form.email) === false) {
-      error.email = "Please enter a valid email."
+      error.email = lenguage === "english" ? "Email missing" : "Falta el correo electrónico";
+    } else if (/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(form.email) === false) {
+      error.email = lenguage === "english" ? "Please enter a valid email." : "Por favor ingrese un correo electrónico válido.";
     }
-    
+
     if (!form.subject) {
-      error.subject = "Subject missing"
-    }else if (form.subject.length < 5) {
-      error.subject = "The subject must contain at least 5 characters."
+      error.subject = lenguage === "english" ? "Subject missing" : "Falta el asunto";
+    } else if (form.subject.length < 5) {
+      error.subject = lenguage === "english" ? "The subject must contain at least 5 characters." : "El asunto debe contener al menos 5 caracteres.";
     }
 
     if (!form.body) {
-      error.body = "Message missing"
-    }else if (form.body.length < 10) {
-      error.body = "The message must contain at least 10 characters."
+      error.body = lenguage === "english" ? "Message missing" : "Falta el mensaje";
+    } else if (form.body.length < 10) {
+      error.body = lenguage === "english" ? "The message must contain at least 10 characters." : "El mensaje debe contener al menos 10 caracteres.";
     }
 
     return error;
@@ -118,12 +123,6 @@ export default function Contact(){
   }
 
   let [showModal, setShowModal] = useState(false)
-
-  interface AppState{
-    lenguage : string
-  }
-  
-  let {lenguage} = useSelector((state: AppState) => state)
 
   if(lenguage === "english"){
     return (
