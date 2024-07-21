@@ -37,6 +37,7 @@
     justify-content: center;
     padding: 2vh;
     width: 90%;
+    margin-bottom: 2vh;
 }
 
 .contactMeIconsContainer {
@@ -302,7 +303,6 @@
 
 @media screen and (max-width: 1024px) {
     .contactContainer {
-        flex-direction: column-reverse;
         align-items: center;
         padding: 0;
         width: 90%;
