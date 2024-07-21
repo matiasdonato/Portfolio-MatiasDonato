@@ -100,7 +100,7 @@ export default function Contact(){
   async function formSubmit(e: FormEvent){
     e.preventDefault()
     setEmailLoading(true)
-    await emailjs.send('service_h7qkxni', 'template_skypbwn', contactForm, "mjOXxAXhg5lKA4scT")
+    await emailjs.send('service_4rkbijp', 'template_dkmbg7f', contactForm, "x-GfuI_-CcUc_xE6N")
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
