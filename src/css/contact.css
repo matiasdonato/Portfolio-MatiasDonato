@@ -23,7 +23,6 @@
 
 .contactTextContainer {
     width: 100%;
-    margin-left: 8vh;
 }
 
 .contactTextContainer h2 {
@@ -267,6 +266,7 @@
     }
     .contactTextContainer {
         margin-top: 20px;
+        margin-left: 8vh;
     }
     .inputBox textarea {
         width: 99%;
