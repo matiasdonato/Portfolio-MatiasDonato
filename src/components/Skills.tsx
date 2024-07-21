@@ -25,6 +25,7 @@ import mongodb from "../assets/images/mongodb.png"
 import colyseus from "../assets/images/colyseus.png"
 import AWS from "../assets/images/AWS.png"
 import DynamoDB from "../assets/images/DynamoDB.png"
+import TypeORM from "../assets/images/typeorm.png"
 
 
 
@@ -75,6 +76,10 @@ export default function Skills(){
           <a href="https://expressjs.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Nest} alt="HTML Logo" className="skillsIcons" />
             <p>NestJS</p>
+          </a>
+          <a href="https://typeorm.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={TypeORM} alt="TypeORM Logo" className="skillsIcons" />
+            <p>TypeORM</p>
           </a>
           <a href="https://www.prisma.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Jest} alt="HTML Logo" className="skillsIcons" />
