@@ -20,8 +20,8 @@
 
 :root #light {
     --background-color: #C0C5CD;
-    --primary-color-1: #C0C5CD;
-    --primary-color-2: #abafb6;
+    --primary-color-1: #b6bcc7;
+    --primary-color-2: rgb(238, 238, 238);
     --primary-color-3: #abafb6c2;
     --secondary-color: #adb5bd;
     --contrast-color: #3E588F;
