@@ -26,6 +26,7 @@ import colyseus from "../assets/images/colyseus.png"
 import AWS from "../assets/images/AWS.png"
 import DynamoDB from "../assets/images/DynamoDB.png"
 import TypeORM from "../assets/images/typeorm.png"
+import Docker from "../assets/images/docker.png"
 
 
 
@@ -88,6 +89,10 @@ export default function Skills(){
           <a href="https://www.colyseus.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={colyseus} alt="HTML Logo" className="skillsIcons" />
             <p>Colyseus</p>
+          </a>
+          <a href="https://www.docker.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={Docker} alt="HTML Logo" className="skillsIcons" />
+            <p>Docker</p>
           </a>
           <a href="https://sequelize.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Sequelize} alt="HTML Logo" className="skillsIcons" />
