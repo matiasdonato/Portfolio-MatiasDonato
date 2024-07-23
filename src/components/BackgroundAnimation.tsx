@@ -4,7 +4,7 @@ export default function BackgroundAnimation(){
 
     return(
         <div className='bgAnimation'  >
-          <div className='bubbles' style={{zIndex:"100"}}>
+          <div className='bubbles animate__animated animate__fadeInUp' style={{zIndex:"100"}}>
             <span style={{"--i":11.16} as React.CSSProperties} ></span>
             <span style={{"--i":12.32 } as React.CSSProperties} ></span>
             <span style={{"--i":24.44} as React.CSSProperties} ></span>

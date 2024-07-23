@@ -17,6 +17,8 @@
 .bubbles {
     position: relative;
     display: flex;
+    animation-delay: 0.3s;
+    animation-duration: 5s;
 }
 
 .bubbles span {
@@ -25,6 +27,7 @@
     border-radius: 1000px;
     animation: bubble-animation 1000s linear infinite;
     animation-duration: calc(240s/ var(--i));
+    animation-delay: -11s; /* Add this line to start the animation 5 seconds earlier */
 }
 
 
