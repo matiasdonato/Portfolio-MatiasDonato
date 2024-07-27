@@ -12,20 +12,16 @@ import Nest from "../assets/images/nest.png"
 import Postgre from "../assets/images/postgreSQL.png"
 import MySQl from "../assets/images/mysql.png"
 import Sequelize from "../assets/images/sequelize.png"
-import Primsa from "../assets/images/prisma.png"
 import Tailwind from "../assets/images/tailwind.png"
 import Bootstrap from "../assets/images/bootstrap.png"
-import SASS from "../assets/images/sass.png"
 import Git from "../assets/images/git.png"
 import Github from "../assets/images/github.png"
+import Azure from "../assets/images/azure.png"
 import Figma from "../assets/images/figma.png"
 import Jest from "../assets/images/jest.png"
-import angular from "../assets/images/Angular.png"
 import mongodb from "../assets/images/mongodb.png"
-import colyseus from "../assets/images/colyseus.png"
 import AWS from "../assets/images/AWS.png"
 import DynamoDB from "../assets/images/DynamoDB.png"
-import TypeORM from "../assets/images/typeorm.png"
 import Docker from "../assets/images/docker.png"
 
 
@@ -49,10 +45,6 @@ export default function Skills(){
           <a href="https://reactjs.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={React} alt="HTML Logo" className="skillsIcons" />
             <p>React</p>
-          </a>
-          <a href="https://reactjs.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={angular} alt="HTML Logo" className="skillsIcons" />
-            <p>Angular</p>
           </a>
           <a href="https://redux.js.org" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Redux} alt="HTML Logo" className="skillsIcons" />
@@ -78,17 +70,9 @@ export default function Skills(){
             <img src={Nest} alt="HTML Logo" className="skillsIcons" />
             <p>NestJS</p>
           </a>
-          <a href="https://typeorm.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={TypeORM} alt="TypeORM Logo" className="skillsIcons" />
-            <p>TypeORM</p>
-          </a>
           <a href="https://www.prisma.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Jest} alt="HTML Logo" className="skillsIcons" />
             <p>Jest</p>
-          </a>
-          <a href="https://www.colyseus.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={colyseus} alt="HTML Logo" className="skillsIcons" />
-            <p>Colyseus</p>
           </a>
           <a href="https://www.docker.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Docker} alt="HTML Logo" className="skillsIcons" />
@@ -114,9 +98,13 @@ export default function Skills(){
             <img src={mongodb} alt="HTML Logo" className="skillsIcons" />
             <p>MongoDB</p>
           </a> 
-          <a href="https://www.prisma.io" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={Primsa} alt="HTML Logo" className="skillsIcons" />
-            <p>Primsa</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={HTML} alt="HTML Logo" className="skillsIcons" />
+            <p>HTML</p>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={CSS} alt="HTML Logo" className="skillsIcons" />
+            <p>CSS</p>
           </a>
           <a href="https://tailwindcss.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Tailwind} alt="HTML Logo" className="skillsIcons" />
@@ -126,18 +114,6 @@ export default function Skills(){
             <img src={Bootstrap} alt="HTML Logo" className="skillsIcons" />
             <p>Bootstrap</p>
           </a>
-          <a href="https://sass-lang.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={SASS} alt="HTML Logo" className="skillsIcons" />
-            <p>SASS</p>
-          </a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={HTML} alt="HTML Logo" className="skillsIcons" />
-            <p>HTML</p>
-          </a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" className="skillsIconsContainer" target="_blank" rel="noreferrer">
-            <img src={CSS} alt="HTML Logo" className="skillsIcons" />
-            <p>CSS</p>
-          </a>
           <a href="https://git-scm.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Git} alt="HTML Logo" className="skillsIcons" />
             <p>Git</p>
@@ -145,6 +121,10 @@ export default function Skills(){
           <a href="https://github.com/about" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Github} alt="HTML Logo" className="skillsIcons" />
             <p>GitHub</p>
+          </a>
+          <a href="https://azure.microsoft.com/es-es/products/devops" className="skillsIconsContainer" target="_blank" rel="noreferrer">
+            <img src={Azure} alt="HTML Logo" className="skillsIcons" />
+            <p>Azure DevOps</p>
           </a>
           <a href="https://www.figma.com" className="skillsIconsContainer" target="_blank" rel="noreferrer">
             <img src={Figma} alt="HTML Logo" className="skillsIcons" />

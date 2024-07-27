@@ -31,6 +31,7 @@
     width: auto;
     height: 71px;
     margin-bottom: 0.5vh;
+    border-radius: 5px;
 }
 
 .skillsIconsContainer {
